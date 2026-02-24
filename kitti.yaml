@@ -1,0 +1,7 @@
+path: /ghome/group07/MCV-C5-Group7/ultralytics/dataset
+train: images/train
+val: images/val
+
+names:
+  0: car
+  1: person
