@@ -3,12 +3,15 @@ import os
 import random
 
 # Paths
-images_path = "/ghome/group07/MCV-C5-Group7/ultralytics/dataset/images/train"
-labels_path = "/ghome/group07/MCV-C5-Group7/ultralytics/dataset/labels/train"
+images_path = "/ghome/group07/MCV-C5-Group7/ultralytics/dataset/images/val"
+labels_path = "/ghome/group07/MCV-C5-Group7/ultralytics/dataset/labels/val"
 output_path = "/ghome/group07/MCV-C5-Group7/ultralytics/groundtruth_check"
 os.makedirs(output_path, exist_ok=True)
 
-classes = ["car", "pedestrian"]
+classes = {
+    0: "person",
+    2: "car",
+}
 
 def yolo_to_bbox(yolo_bbox, img_width, img_height):
     x_center, y_center, w, h = yolo_bbox
