@@ -1,0 +1,2 @@
+/ghome/group07/miniconda3/envs/c3/lib/python3.10/site-packages/PIL/TiffImagePlugin.py:950: UserWarning: Corrupt EXIF data.  Expecting to read 4 bytes but only got 0. 
+  warnings.warn(str(msg))

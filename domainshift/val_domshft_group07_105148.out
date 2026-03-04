@@ -1,0 +1,21 @@
+
+==============================
+Evaluating FINETUNED DETR (deart)
+==============================
+Loading checkpoint: /ghome/group07/MCV-C5-Group7/domainshift/copia/checkpoint_epoch4.pth
+Checkpoint loaded successfully.
+creating index...
+index created!
+Test:  [   0/1515]  eta: 0:43:08  model_time: 0.5105 (0.5105)  evaluator_time: 0.0013 (0.0013)  time: 1.7087  data: 0.7829  max mem: 400
+Test:  [ 100/1515]  eta: 0:02:31  model_time: 0.0379 (0.0573)  evaluator_time: 0.0011 (0.0021)  time: 0.1025  data: 0.0270  max mem: 472
+Test:  [ 200/1515]  eta: 0:01:57  model_time: 0.0421 (0.0488)  evaluator_time: 0.0011 (0.0025)  time: 0.0687  data: 0.0003  max mem: 472
+Test:  [ 300/1515]  eta: 0:01:39  model_time: 0.0309 (0.0441)  evaluator_time: 0.0012 (0.0027)  time: 0.0677  data: 0.0007  max mem: 472
+Test:  [ 400/1515]  eta: 0:01:26  model_time: 0.0300 (0.0418)  evaluator_time: 0.0009 (0.0027)  time: 0.0603  data: 0.0010  max mem: 473
+Test:  [ 500/1515]  eta: 0:01:18  model_time: 0.0338 (0.0405)  evaluator_time: 0.0013 (0.0027)  time: 0.0776  data: 0.0027  max mem: 473
+Test:  [ 600/1515]  eta: 0:01:10  model_time: 0.0291 (0.0393)  evaluator_time: 0.0011 (0.0027)  time: 0.0717  data: 0.0006  max mem: 473
+Test:  [ 700/1515]  eta: 0:01:02  model_time: 0.0293 (0.0382)  evaluator_time: 0.0011 (0.0027)  time: 0.0990  data: 0.0336  max mem: 473
+Test:  [ 800/1515]  eta: 0:00:53  model_time: 0.0281 (0.0373)  evaluator_time: 0.0011 (0.0026)  time: 0.0576  data: 0.0003  max mem: 473
+Test:  [ 900/1515]  eta: 0:00:45  model_time: 0.0283 (0.0366)  evaluator_time: 0.0013 (0.0027)  time: 0.0656  data: 0.0018  max mem: 473
+Test:  [1000/1515]  eta: 0:00:37  model_time: 0.0287 (0.0363)  evaluator_time: 0.0012 (0.0027)  time: 0.0690  data: 0.0003  max mem: 473
+Test:  [1100/1515]  eta: 0:00:30  model_time: 0.0311 (0.0360)  evaluator_time: 0.0014 (0.0027)  time: 0.0787  data: 0.0041  max mem: 473
+Test:  [1200/1515]  eta: 0:00:23  model_time: 0.0300 (0.0357)  evaluator_time: 0.0013 (0.0027)  time: 0.0690  data: 0.0013  max mem: 473

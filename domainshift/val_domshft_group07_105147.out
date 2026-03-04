@@ -1,0 +1,44 @@
+
+==============================
+Evaluating FINETUNED DETR (epoch4)
+==============================
+Loading checkpoint: /ghome/group07/MCV-C5-Group7/domainshift/copia/checkpoint_epoch4.pth
+Checkpoint loaded successfully.
+creating index...
+index created!
+Test:  [   0/1515]  eta: 0:36:33  model_time: 0.4820 (0.4820)  evaluator_time: 0.0012 (0.0012)  time: 1.4480  data: 0.8313  max mem: 400
+Test:  [ 100/1515]  eta: 0:02:18  model_time: 0.0342 (0.0551)  evaluator_time: 0.0010 (0.0020)  time: 0.0831  data: 0.0098  max mem: 472
+Test:  [ 200/1515]  eta: 0:01:51  model_time: 0.0363 (0.0476)  evaluator_time: 0.0009 (0.0024)  time: 0.0675  data: 0.0008  max mem: 472
+Test:  [ 300/1515]  eta: 0:01:35  model_time: 0.0295 (0.0433)  evaluator_time: 0.0011 (0.0026)  time: 0.0679  data: 0.0003  max mem: 472
+Test:  [ 400/1515]  eta: 0:01:23  model_time: 0.0292 (0.0410)  evaluator_time: 0.0009 (0.0026)  time: 0.0596  data: 0.0002  max mem: 473
+Test:  [ 500/1515]  eta: 0:01:14  model_time: 0.0317 (0.0395)  evaluator_time: 0.0010 (0.0025)  time: 0.0630  data: 0.0003  max mem: 473
+Test:  [ 600/1515]  eta: 0:01:05  model_time: 0.0266 (0.0380)  evaluator_time: 0.0010 (0.0025)  time: 0.0577  data: 0.0003  max mem: 473
+Test:  [ 700/1515]  eta: 0:00:57  model_time: 0.0281 (0.0367)  evaluator_time: 0.0009 (0.0025)  time: 0.0816  data: 0.0234  max mem: 473
+Test:  [ 800/1515]  eta: 0:00:49  model_time: 0.0279 (0.0362)  evaluator_time: 0.0009 (0.0025)  time: 0.0542  data: 0.0002  max mem: 473
+Test:  [ 900/1515]  eta: 0:00:41  model_time: 0.0282 (0.0354)  evaluator_time: 0.0010 (0.0025)  time: 0.0580  data: 0.0003  max mem: 473
+Test:  [1000/1515]  eta: 0:00:34  model_time: 0.0296 (0.0350)  evaluator_time: 0.0012 (0.0025)  time: 0.0618  data: 0.0003  max mem: 473
+Test:  [1100/1515]  eta: 0:00:27  model_time: 0.0282 (0.0344)  evaluator_time: 0.0012 (0.0025)  time: 0.0629  data: 0.0003  max mem: 473
+Test:  [1200/1515]  eta: 0:00:20  model_time: 0.0275 (0.0341)  evaluator_time: 0.0011 (0.0025)  time: 0.0612  data: 0.0008  max mem: 473
+Test:  [1300/1515]  eta: 0:00:14  model_time: 0.0286 (0.0337)  evaluator_time: 0.0010 (0.0025)  time: 0.0605  data: 0.0018  max mem: 473
+Test:  [1400/1515]  eta: 0:00:07  model_time: 0.0271 (0.0333)  evaluator_time: 0.0010 (0.0026)  time: 0.0540  data: 0.0003  max mem: 473
+Test:  [1500/1515]  eta: 0:00:00  model_time: 0.0273 (0.0330)  evaluator_time: 0.0013 (0.0026)  time: 0.0590  data: 0.0004  max mem: 473
+Test:  [1514/1515]  eta: 0:00:00  model_time: 0.0254 (0.0330)  evaluator_time: 0.0011 (0.0026)  time: 0.0559  data: 0.0004  max mem: 473
+Test: Total time: 0:01:38 (0.0649 s / it)
+Averaged stats: model_time: 0.0254 (0.0330)  evaluator_time: 0.0011 (0.0026)
+Accumulating evaluation results...
+DONE (t=0.19s).
+IoU metric: bbox
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.001
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.008
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.002
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.012
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.021
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.025
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.006
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.032
+
+Per-class mAP:
