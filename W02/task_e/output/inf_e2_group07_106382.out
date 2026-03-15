@@ -1,0 +1,6 @@
+loading annotations into memory...
+Done (t=0.40s)
+creating index...
+index created!
+Saved predictions to: sam_predictions_epoch5.json
+Total predictions: 11376

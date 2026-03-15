@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/ghome/group07/MCV-C5-Group7/Week2/task_e/evaluate_sam.py", line 22, in <module>
+    coco_dt = coco_gt.loadRes(preds_filtered)
+  File "/ghome/group07/MCV-C5-Group7/Week2/task_e/evaluate_sam.py", line 22, in <module>
+    coco_dt = coco_gt.loadRes(preds_filtered)
+  File "/ghome/group07/miniconda3/envs/c5/lib/python3.10/bdb.py", line 90, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/ghome/group07/miniconda3/envs/c5/lib/python3.10/bdb.py", line 115, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit

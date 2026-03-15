@@ -1,0 +1,9 @@
+loading annotations into memory...
+Done (t=0.38s)
+creating index...
+index created!
+Saved filtered GT to: gt_filtered_val_sequences.json
+Filtered images: 7162
+Filtered annotations: 38275
+Saved predictions to: sam_predictions_pretrained.json
+Total predictions: 38235

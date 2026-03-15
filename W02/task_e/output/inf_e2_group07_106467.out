@@ -1,0 +1,8 @@
+loading annotations into memory...
+Done (t=0.22s)
+creating index...
+index created!
+>>> IMPORTANT! -> Removed 0 predictions not in GT
+> /ghome/group07/MCV-C5-Group7/Week2/task_e/evaluate_sam.py(22)<module>()
+-> coco_dt = coco_gt.loadRes(preds_filtered)
+(Pdb) 
