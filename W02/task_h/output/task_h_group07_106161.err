@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/export/home/group07/MCV-C5-Group7/Week2/task_h/task_h.py", line 11, in <module>
+    from segment_anything import sam_model_registry, SamAutomaticMaskGenerator
+ModuleNotFoundError: No module named 'segment_anything'

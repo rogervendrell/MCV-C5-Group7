@@ -1,0 +1,28 @@
+Loading weights:   0%|          | 0/314 [00:00<?, ?it/s]Loading weights: 100%|██████████| 314/314 [00:00<00:00, 7591.81it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+The image processor of type `SamImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. 
+Loading weights:   0%|          | 0/314 [00:00<?, ?it/s]Loading weights: 100%|██████████| 314/314 [00:00<00:00, 4762.63it/s]
+Traceback (most recent call last):
+  File "/export/home/group07/MCV-C5-Group7/Week2/task_h/task_h.py", line 129, in <module>
+    masks = generator(img_np, points_per_batch=32)
+  File "/ghome/group07/miniconda3/envs/c5/lib/python3.10/site-packages/transformers/pipelines/mask_generation.py", line 185, in __call__
+    return super().__call__(image, *args, num_workers=num_workers, batch_size=batch_size, **kwargs)
+  File "/ghome/group07/miniconda3/envs/c5/lib/python3.10/site-packages/transformers/pipelines/base.py", line 1259, in __call__
+    return next(
+  File "/ghome/group07/miniconda3/envs/c5/lib/python3.10/site-packages/transformers/pipelines/pt_utils.py", line 126, in __next__
+    item = next(self.iterator)
+  File "/ghome/group07/miniconda3/envs/c5/lib/python3.10/site-packages/transformers/pipelines/pt_utils.py", line 271, in __next__
+    processed = self.infer(next(self.iterator), **self.params)
+  File "/ghome/group07/miniconda3/envs/c5/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 701, in __next__
+    data = self._next_data()
+  File "/ghome/group07/miniconda3/envs/c5/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 757, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/ghome/group07/miniconda3/envs/c5/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 33, in fetch
+    data.append(next(self.dataset_iter))
+  File "/ghome/group07/miniconda3/envs/c5/lib/python3.10/site-packages/transformers/pipelines/pt_utils.py", line 188, in __next__
+    processed = next(self.subiterator)
+  File "/ghome/group07/miniconda3/envs/c5/lib/python3.10/site-packages/transformers/pipelines/mask_generation.py", line 197, in preprocess
+    image = load_image(image, timeout=timeout)
+  File "/ghome/group07/miniconda3/envs/c5/lib/python3.10/site-packages/transformers/image_utils.py", line 471, in load_image
+    raise TypeError(
+TypeError: Incorrect format used for image. Should be an url linking to an image, a base64 string, a local path, or a PIL image.

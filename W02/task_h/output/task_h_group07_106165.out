@@ -1,0 +1,8 @@
+Processing: /ghome/mcv/datasets/C5/KITTI-MOTS/training/image_02/0000/000000.png
+Number of masks: 348
+Embedding shape: (348, 256)
+Clusters: [0 1 2 3]
+Processing: /ghome/mcv/datasets/C5/KITTI-MOTS/training/image_02/0000/000001.png
+Number of masks: 349
+Embedding shape: (349, 256)
+Clusters: [0 1 2 3]
