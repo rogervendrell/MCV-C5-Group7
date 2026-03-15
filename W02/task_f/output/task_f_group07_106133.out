@@ -1,0 +1,7 @@
+loading annotations into memory...
+Done (t=0.23s)
+creating index...
+index created!
+Finished SAM inference
+Predictions saved to: /ghome/group07/MCV-C5-Group7/Week2/task_f/sam_predictions.json
+Total predictions: 46586
