@@ -2,18 +2,18 @@
 
 This repository contains the implementation for the **MCV-C5 Computer Vision project**.
 
-The project explores **object detection and segmentation methods** using multiple frameworks and modern foundation models:
+The project explores **object detection and segmentation approaches** across multiple frameworks and foundation models:
 
 * **Ultralytics YOLO**
 * **Torchvision detection models (Faster R-CNN)**
 * **HuggingFace models (DETR / RT-DETR)**
 * **Segment Anything Model (SAM)**
 
-Experiments are organized **by week and task** following the course assignment structure.
+Experiments are organized **by week and task**, following the structure of the course assignment.
 
 > **Note**
-> Large datasets and trained model weights (`.pt`, `.pth`) are **not stored in this repository**.
-> They are located on the **cluster**, and only logs or reference links are included.
+> Large datasets and trained models (`.pt`, `.pth`) are **not included in this repository**.
+> They are stored on the **cluster**, and only logs or reference links are provided.
 
 ---
 
@@ -32,7 +32,10 @@ Experiments are organized **by week and task** following the course assignment s
 
 # Week 1 – Object Detection
 
-Week 1 focuses on **object detection models** and their comparison on the **KITTI-MOTS dataset**.
+<details>
+<summary><b>Click to expand Week 1 details</b></summary>
+
+Week 1 focuses on **object detection models** and their evaluation on the **KITTI-MOTS dataset**.
 
 Models explored:
 
@@ -40,24 +43,27 @@ Models explored:
 * **DETR / RT-DETR** (HuggingFace)
 * **YOLO (>v8)** (Ultralytics)
 
-The goal is to analyze **performance, robustness, and inference characteristics** across architectures.
+The goal is to analyze **performance, robustness, and inference characteristics** across different architectures.
+
+---
 
 ## Week 1 Tasks
 
-**a. Environment setup**
+**a. Environment Setup**
 
-* Install and configure the required frameworks.
-* Prepare the development environment and cluster job scripts.
+* Install and configure the development frameworks.
+* Prepare the execution environment and cluster scripts.
 
-**b. Dataset and framework exploration**
+---
+
+**b. Dataset and Framework Exploration**
 
 * Explore the **KITTI-MOTS dataset**.
-* Familiarize with:
+* Familiarize with the **HuggingFace** and **Ultralytics** frameworks.
 
-  * HuggingFace detection models
-  * Ultralytics YOLO framework.
+---
 
-**c. Inference with pre-trained models**
+**c. Inference with Pretrained Models**
 
 Run inference on KITTI-MOTS using:
 
@@ -65,61 +71,70 @@ Run inference on KITTI-MOTS using:
 * **DETR**
 * **YOLO (>v8)**
 
-**d. Evaluation of pre-trained models**
+---
 
-Evaluate the detectors using standard object detection metrics:
+**d. Evaluation of Pretrained Models**
+
+Evaluate the detectors using standard metrics:
 
 * mAP
 * Precision / Recall
-* Per-class performance
+* Per-class detection performance
+
+---
 
 **e. Fine-tuning on KITTI-MOTS**
 
 Fine-tune object detection models on the dataset.
 
-Framework-specific modifications:
+Framework-specific details:
 
-* **Faster R-CNN / DETR**
+**Faster R-CNN and DETR**
 
-  * Data augmentation with **Albumentations**
+* Data augmentations implemented with **Albumentations**
 
-* **YOLO**
+**YOLO**
 
-  * Data augmentation through **YOLO configuration**
-
-**f. Domain shift experiment**
-
-Fine-tune one detection model on a **different dataset** to analyze domain shift.
-
-Dataset used:
-
-* **DeART**
-
-**g. Model comparison**
-
-Analyze differences between models including:
-
-* inference speed
-* model size and parameters
-* detection performance
-* robustness to variations
-
-**h. RT-DETR fine-tuning**
-
-Repeat the analysis including **fine-tuned RT-DETR**.
+* Data augmentations configured within the **YOLO training configuration**
 
 ---
 
-<details>
-<summary><b>Week 1 Implementation Details</b></summary>
+**f. Domain Shift Experiment**
 
-## Ultralytics (YOLO)
+Fine-tune either **Faster R-CNN or DETR** on a different dataset to analyze domain shift.
+
+Dataset used:
+
+* **DeART dataset**
+
+---
+
+**g. Model Comparison**
+
+Analyze the differences between object detection models including:
+
+* number of parameters
+* inference time
+* model robustness
+* detection performance
+
+---
+
+**h. RT-DETR Fine-tuning**
+
+Repeat the previous analysis including **fine-tuned RT-DETR**.
+
+---
+
+# Week 1 Implementation Structure
+
+### Ultralytics (YOLO)
 
 `W01/ultralytics/`
 
 YOLO-based experiments.
 
-Includes:
+Contains implementations for:
 
 * `task_c/` – Pretrained inference
 * `task_d/` – Model evaluation
@@ -134,42 +149,46 @@ Analysis tools:
 
 * `plots/`
 
-  * Learning rate experiments
-  * Data augmentation comparisons
-  * Batch size experiments
-  * Image size experiments
+  * learning rate experiments
+  * data augmentation experiments
+  * batch size comparisons
+  * image size experiments
 
-Validation:
+Validation scripts and outputs:
 
-* `validate/` – Validation scripts and cluster outputs
+* `validate/`
 
-Annotation verification:
+Ground-truth verification utilities:
 
 * `groundtruth_check/`
 
+Cluster job scripts:
+
+* `jobs/`
+
 ---
 
-## Torchvision (Faster R-CNN)
+### Torchvision (Faster R-CNN)
 
 `W01/torchvision/`
 
-Torchvision implementations of detection tasks.
+Torchvision implementations of the detection tasks.
 
 Includes:
 
-* `task_c/` – Inference with pretrained model
-* `task_d/` – Evaluation pipeline
-* `task_e/` – Fine-tuning with augmentations
+* `task_c/` – Pretrained inference
+* `task_d/` – Model evaluation
+* `task_e/` – Fine-tuning
 
 Utilities include:
 
-* COCO evaluation tools
-* Dataset loaders
+* dataset loaders
 * training utilities
+* COCO evaluation scripts
 
 ---
 
-## HuggingFace (DETR / RT-DETR)
+### HuggingFace (DETR / RT-DETR)
 
 `W01/huggingface/`
 
@@ -177,35 +196,46 @@ Experiments using HuggingFace detection models.
 
 Tasks implemented:
 
-* `task_c/` – Pretrained inference
-* `task_d/` – Evaluation
-* `task_e/` – Fine-tuning
+* `task_c/` – inference
+* `task_d/` – evaluation
+* `task_e/` – fine-tuning
 
 Evaluation visualizations include:
 
 * PR curves
 * mAP plots
-* confidence vs F1 curves
+* F1 vs confidence curves
+
+Cluster training is executed using:
+
+```
+job.sh
+```
 
 ---
 
-## Domain Shift Experiments
+### Domain Shift Experiments
 
 `W01/domainshift/`
 
-Experiments exploring **cross-dataset generalization**.
+Experiments analyzing **cross-dataset generalization**.
 
 Main scripts:
 
-* `task_f.py` – Fine-tuning with domain shift
-* `validate_models.py` – Model evaluation
-* `deart_dataset.py` – DeART dataset loader
+* `task_f.py` – training with domain shift
+* `validate_models.py` – model validation
+* `deart_dataset.py` – dataset loader
 
-Additional training utilities:
+Training utilities:
 
 * `engine.py`
 * `utils.py`
 * `albumentations_aug.py`
+
+Evaluation utilities:
+
+* `coco_eval.py`
+* `coco_utils.py`
 
 </details>
 
@@ -213,17 +243,22 @@ Additional training utilities:
 
 # Week 2 – Segmentation with SAM
 
-Week 2 focuses on **instance segmentation using the Segment Anything Model (SAM)** and prompt-based segmentation.
+<details>
+<summary><b>Click to expand Week 2 details</b></summary>
 
-Experiments explore how different prompts affect segmentation quality.
+Week 2 focuses on **instance segmentation using the Segment Anything Model (SAM)** and prompt-based segmentation techniques.
+
+The experiments investigate **how different prompts affect segmentation performance**.
+
+---
 
 ## Week 2 Tasks
 
-**a. SAM inference with prompts**
+**a. SAM Inference with Prompts**
 
-Run inference with **pre-trained SAM** on the KITTI-MOTS dataset.
+Run inference using **pre-trained SAM** on the **KITTI-MOTS dataset**.
 
-Evaluate segmentation results using different prompt types:
+Evaluate segmentation performance using different prompt types:
 
 * bounding boxes
 * points
@@ -231,39 +266,37 @@ Evaluate segmentation results using different prompt types:
 
 ---
 
-**b. Grounded SAM with text prompts**
+**b. Grounded SAM with Text Prompts**
 
-Use **Grounded SAM** to perform segmentation based on **text prompts**.
+Use **Grounded SAM** to perform segmentation using **text prompts**.
 
-Example prompts:
+Examples:
 
 * `"car"`
 * `"person"`
 
-Evaluate results on KITTI-MOTS.
+Evaluate segmentation performance on KITTI-MOTS.
 
 ---
 
-**c. SAM with detection model prompts**
+**c. Detection + SAM Pipeline**
 
-Use the **bounding boxes produced by the best object detection model from Week 1** as prompts for SAM.
+Use bounding boxes generated by the **best object detection model from Week 1** as prompts for SAM.
 
 Pipeline:
 
-1. Run object detection model
-2. Extract bounding boxes
-3. Provide boxes as prompts to SAM
+1. run object detection
+2. extract bounding boxes
+3. provide bounding boxes as SAM prompts
 
 ---
 
-**d. Compare segmentation pipelines**
+**d. Compare Segmentation Pipelines**
 
-Compare the segmentation quality of:
+Compare results between:
 
 * **Grounded SAM (text prompts)**
-* **SAM using detection bounding boxes**
-
-Metrics and qualitative comparisons are analyzed.
+* **SAM with bounding boxes from the detection model**
 
 ---
 
@@ -273,12 +306,12 @@ Fine-tune the **Prompt Decoder of SAM** for **instance segmentation** on KITTI-M
 
 ---
 
-**f. Domain shift experiment**
+**f. Domain Shift Evaluation**
 
 Evaluate both:
 
-* **Pretrained SAM**
-* **Fine-tuned SAM**
+* **pretrained SAM**
+* **fine-tuned SAM**
 
 on another dataset to analyze generalization.
 
@@ -288,87 +321,86 @@ Example dataset:
 
 ---
 
-**g. Prompt analysis**
+**g. Prompt Analysis**
 
-Analyze how segmentation performance varies with:
+Analyze how segmentation quality varies with:
 
 * prompt type
-* prompt quality
 * prompt source
+* prompt accuracy
 
 ---
 
-**h. (Optional) Semantic segmentation**
+**h. (Optional) Semantic Segmentation**
 
 Explore performing **semantic segmentation on KITTI-MOTS** using SAM.
 
 ---
 
-<details>
-<summary><b>Week 2 Implementation Details</b></summary>
+# Week 2 Implementation Structure
 
-## Task A
+### Task A
 
 `W02/task_a/`
 
-Basic SAM inference experiments and initial evaluation.
+Initial experiments running SAM inference and evaluation.
+
+Main script:
+
+```
+task_a.py
+```
 
 ---
 
-## Task B
+### Task B
 
 `W02/task_b/`
 
-Evaluation utilities and result analysis tools.
+Evaluation and visualization utilities.
 
 Includes:
 
-* plotting utilities
-* result aggregation
-* experiment visualization
+* result processing
+* plotting tools
+* experiment analysis scripts
 
 ---
 
-## Task C – Detection + SAM Pipeline
+### Task C – Detection + SAM Pipeline
 
 `W02/task_c/`
 
-Pipeline combining **object detection models with SAM segmentation**.
+Pipeline combining **object detection outputs with SAM segmentation**.
 
-Main functionality:
-
-* Generate bounding boxes with YOLO
-* Use boxes as SAM prompts
-* Evaluate segmentation results
-
-Includes:
+Main components:
 
 * bounding box generation
-* evaluation scripts
-* visualization tools
+* segmentation evaluation
+* visualization utilities
 
 ---
 
-## Task E – SAM Fine-Tuning
+### Task E – SAM Fine-tuning
 
 `W02/task_e/`
 
-Fine-tuning the **prompt decoder of SAM**.
+Fine-tuning the **SAM prompt decoder**.
 
 Includes:
 
 * dataset loaders
 * inference scripts
-* evaluation scripts
-* visualization tools
+* evaluation tools
+* visualization utilities
 
 ---
 
-## Task F – Domain Shift with SAM
+### Task F – Domain Shift with SAM
 
 `W02/task_f/`
 
-Evaluation of **pretrained vs fine-tuned SAM** on a different dataset.
+Evaluation of **SAM generalization** to another dataset.
 
 Includes:
 
@@ -382,11 +414,11 @@ Dataset used:
 
 ---
 
-## Task H
+### Task H
 
 `W02/task_h/`
 
-Additional experiments and analysis.
+Additional experiments and analysis scripts.
 
 </details>
 
@@ -424,5 +456,5 @@ pip install -r requirements.txt
 # Notes
 
 * Experiments were executed on **GPU clusters using SLURM jobs**.
-* `.out` and `.err` logs are included for **reproducibility and debugging**.
+* `.out` and `.err` logs are included for **debugging and experiment tracking**.
 * Large model checkpoints and datasets are stored **externally on the cluster**.
