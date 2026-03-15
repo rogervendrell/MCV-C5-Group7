@@ -1,0 +1,1996 @@
+
+Running SAM with YOLO confidence 0.01
+
+----- Inference Timing -----
+Images timed: 1
+Mean inference time: 592.83 ms/image
+Std deviation: 0.00 ms
+
+----- Inference Timing -----
+Images timed: 2
+Mean inference time: 348.07 ms/image
+Std deviation: 244.76 ms
+
+----- Inference Timing -----
+Images timed: 3
+Mean inference time: 266.65 ms/image
+Std deviation: 230.64 ms
+
+----- Inference Timing -----
+Images timed: 4
+Mean inference time: 225.30 ms/image
+Std deviation: 212.20 ms
+
+----- Inference Timing -----
+Images timed: 5
+Mean inference time: 200.55 ms/image
+Std deviation: 196.14 ms
+
+----- Inference Timing -----
+Images timed: 6
+Mean inference time: 186.15 ms/image
+Std deviation: 181.93 ms
+
+----- Inference Timing -----
+Images timed: 7
+Mean inference time: 174.05 ms/image
+Std deviation: 171.02 ms
+
+----- Inference Timing -----
+Images timed: 8
+Mean inference time: 165.48 ms/image
+Std deviation: 161.57 ms
+
+----- Inference Timing -----
+Images timed: 9
+Mean inference time: 158.75 ms/image
+Std deviation: 153.51 ms
+
+----- Inference Timing -----
+Images timed: 10
+Mean inference time: 153.49 ms/image
+Std deviation: 146.49 ms
+
+----- Inference Timing -----
+Images timed: 11
+Mean inference time: 148.92 ms/image
+Std deviation: 140.42 ms
+
+----- Inference Timing -----
+Images timed: 12
+Mean inference time: 145.23 ms/image
+Std deviation: 135.00 ms
+
+----- Inference Timing -----
+Images timed: 13
+Mean inference time: 142.10 ms/image
+Std deviation: 130.15 ms
+
+----- Inference Timing -----
+Images timed: 14
+Mean inference time: 139.36 ms/image
+Std deviation: 125.81 ms
+
+----- Inference Timing -----
+Images timed: 15
+Mean inference time: 137.08 ms/image
+Std deviation: 121.84 ms
+
+----- Inference Timing -----
+Images timed: 16
+Mean inference time: 135.00 ms/image
+Std deviation: 118.25 ms
+
+----- Inference Timing -----
+Images timed: 17
+Mean inference time: 133.09 ms/image
+Std deviation: 114.97 ms
+
+----- Inference Timing -----
+Images timed: 18
+Mean inference time: 131.34 ms/image
+Std deviation: 111.96 ms
+
+----- Inference Timing -----
+Images timed: 19
+Mean inference time: 129.86 ms/image
+Std deviation: 109.16 ms
+
+----- Inference Timing -----
+Images timed: 20
+Mean inference time: 128.54 ms/image
+Std deviation: 106.55 ms
+
+----- Inference Timing -----
+Images timed: 21
+Mean inference time: 127.33 ms/image
+Std deviation: 104.12 ms
+
+----- Inference Timing -----
+Images timed: 22
+Mean inference time: 126.41 ms/image
+Std deviation: 101.81 ms
+
+----- Inference Timing -----
+Images timed: 23
+Mean inference time: 125.42 ms/image
+Std deviation: 99.69 ms
+
+----- Inference Timing -----
+Images timed: 24
+Mean inference time: 124.60 ms/image
+Std deviation: 97.67 ms
+
+----- Inference Timing -----
+Images timed: 25
+Mean inference time: 123.67 ms/image
+Std deviation: 95.80 ms
+
+----- Inference Timing -----
+Images timed: 26
+Mean inference time: 122.96 ms/image
+Std deviation: 94.01 ms
+
+----- Inference Timing -----
+Images timed: 27
+Mean inference time: 122.39 ms/image
+Std deviation: 92.30 ms
+
+----- Inference Timing -----
+Images timed: 28
+Mean inference time: 121.92 ms/image
+Std deviation: 90.67 ms
+
+----- Inference Timing -----
+Images timed: 29
+Mean inference time: 121.29 ms/image
+Std deviation: 89.15 ms
+
+----- Inference Timing -----
+Images timed: 30
+Mean inference time: 120.65 ms/image
+Std deviation: 87.72 ms
+
+----- Inference Timing -----
+Images timed: 31
+Mean inference time: 120.08 ms/image
+Std deviation: 86.35 ms
+
+----- Inference Timing -----
+Images timed: 32
+Mean inference time: 119.63 ms/image
+Std deviation: 85.03 ms
+
+----- Inference Timing -----
+Images timed: 33
+Mean inference time: 119.12 ms/image
+Std deviation: 83.78 ms
+
+----- Inference Timing -----
+Images timed: 34
+Mean inference time: 118.68 ms/image
+Std deviation: 82.58 ms
+
+----- Inference Timing -----
+Images timed: 35
+Mean inference time: 118.20 ms/image
+Std deviation: 81.44 ms
+
+----- Inference Timing -----
+Images timed: 36
+Mean inference time: 117.76 ms/image
+Std deviation: 80.34 ms
+
+----- Inference Timing -----
+Images timed: 37
+Mean inference time: 117.33 ms/image
+Std deviation: 79.29 ms
+
+----- Inference Timing -----
+Images timed: 38
+Mean inference time: 117.19 ms/image
+Std deviation: 78.24 ms
+
+----- Inference Timing -----
+Images timed: 39
+Mean inference time: 117.16 ms/image
+Std deviation: 77.23 ms
+
+----- Inference Timing -----
+Images timed: 40
+Mean inference time: 116.87 ms/image
+Std deviation: 76.28 ms
+
+----- Inference Timing -----
+Images timed: 41
+Mean inference time: 116.65 ms/image
+Std deviation: 75.36 ms
+
+----- Inference Timing -----
+Images timed: 42
+Mean inference time: 116.62 ms/image
+Std deviation: 74.46 ms
+
+----- Inference Timing -----
+Images timed: 43
+Mean inference time: 116.37 ms/image
+Std deviation: 73.61 ms
+
+----- Inference Timing -----
+Images timed: 44
+Mean inference time: 116.35 ms/image
+Std deviation: 72.76 ms
+
+----- Inference Timing -----
+Images timed: 45
+Mean inference time: 116.37 ms/image
+Std deviation: 71.95 ms
+
+----- Inference Timing -----
+Images timed: 46
+Mean inference time: 116.18 ms/image
+Std deviation: 71.18 ms
+
+----- Inference Timing -----
+Images timed: 47
+Mean inference time: 116.14 ms/image
+Std deviation: 70.42 ms
+
+----- Inference Timing -----
+Images timed: 48
+Mean inference time: 116.11 ms/image
+Std deviation: 69.68 ms
+
+----- Inference Timing -----
+Images timed: 49
+Mean inference time: 116.00 ms/image
+Std deviation: 68.97 ms
+
+----- Inference Timing -----
+Images timed: 50
+Mean inference time: 115.80 ms/image
+Std deviation: 68.29 ms
+
+----- Inference Timing -----
+Images timed: 51
+Mean inference time: 115.80 ms/image
+Std deviation: 67.62 ms
+
+----- Inference Timing -----
+Images timed: 52
+Mean inference time: 115.81 ms/image
+Std deviation: 66.96 ms
+
+----- Inference Timing -----
+Images timed: 53
+Mean inference time: 115.61 ms/image
+Std deviation: 66.34 ms
+
+----- Inference Timing -----
+Images timed: 54
+Mean inference time: 115.58 ms/image
+Std deviation: 65.73 ms
+
+----- Inference Timing -----
+Images timed: 55
+Mean inference time: 115.49 ms/image
+Std deviation: 65.13 ms
+
+----- Inference Timing -----
+Images timed: 56
+Mean inference time: 115.49 ms/image
+Std deviation: 64.55 ms
+
+----- Inference Timing -----
+Images timed: 57
+Mean inference time: 115.43 ms/image
+Std deviation: 63.98 ms
+
+----- Inference Timing -----
+Images timed: 58
+Mean inference time: 115.39 ms/image
+Std deviation: 63.43 ms
+
+----- Inference Timing -----
+Images timed: 59
+Mean inference time: 115.33 ms/image
+Std deviation: 62.89 ms
+
+----- Inference Timing -----
+Images timed: 60
+Mean inference time: 115.33 ms/image
+Std deviation: 62.36 ms
+
+----- Inference Timing -----
+Images timed: 61
+Mean inference time: 115.24 ms/image
+Std deviation: 61.85 ms
+
+----- Inference Timing -----
+Images timed: 62
+Mean inference time: 115.09 ms/image
+Std deviation: 61.36 ms
+
+----- Inference Timing -----
+Images timed: 63
+Mean inference time: 115.09 ms/image
+Std deviation: 60.87 ms
+
+----- Inference Timing -----
+Images timed: 64
+Mean inference time: 114.99 ms/image
+Std deviation: 60.40 ms
+
+----- Inference Timing -----
+Images timed: 65
+Mean inference time: 114.88 ms/image
+Std deviation: 59.94 ms
+
+----- Inference Timing -----
+Images timed: 66
+Mean inference time: 114.78 ms/image
+Std deviation: 59.49 ms
+
+----- Inference Timing -----
+Images timed: 67
+Mean inference time: 114.64 ms/image
+Std deviation: 59.06 ms
+
+----- Inference Timing -----
+Images timed: 68
+Mean inference time: 114.50 ms/image
+Std deviation: 58.63 ms
+
+----- Inference Timing -----
+Images timed: 69
+Mean inference time: 114.39 ms/image
+Std deviation: 58.21 ms
+
+----- Inference Timing -----
+Images timed: 70
+Mean inference time: 114.41 ms/image
+Std deviation: 57.80 ms
+
+----- Inference Timing -----
+Images timed: 71
+Mean inference time: 114.30 ms/image
+Std deviation: 57.39 ms
+
+----- Inference Timing -----
+Images timed: 72
+Mean inference time: 114.20 ms/image
+Std deviation: 57.00 ms
+
+----- Inference Timing -----
+Images timed: 73
+Mean inference time: 114.15 ms/image
+Std deviation: 56.61 ms
+
+----- Inference Timing -----
+Images timed: 74
+Mean inference time: 114.07 ms/image
+Std deviation: 56.23 ms
+
+----- Inference Timing -----
+Images timed: 75
+Mean inference time: 114.15 ms/image
+Std deviation: 55.86 ms
+
+----- Inference Timing -----
+Images timed: 76
+Mean inference time: 114.16 ms/image
+Std deviation: 55.49 ms
+
+----- Inference Timing -----
+Images timed: 77
+Mean inference time: 114.16 ms/image
+Std deviation: 55.13 ms
+
+----- Inference Timing -----
+Images timed: 78
+Mean inference time: 114.14 ms/image
+Std deviation: 54.77 ms
+
+----- Inference Timing -----
+Images timed: 79
+Mean inference time: 114.16 ms/image
+Std deviation: 54.43 ms
+
+----- Inference Timing -----
+Images timed: 80
+Mean inference time: 114.22 ms/image
+Std deviation: 54.09 ms
+
+----- Inference Timing -----
+Images timed: 81
+Mean inference time: 114.27 ms/image
+Std deviation: 53.75 ms
+
+----- Inference Timing -----
+Images timed: 82
+Mean inference time: 114.41 ms/image
+Std deviation: 53.44 ms
+
+----- Inference Timing -----
+Images timed: 83
+Mean inference time: 114.54 ms/image
+Std deviation: 53.13 ms
+
+----- Inference Timing -----
+Images timed: 84
+Mean inference time: 114.69 ms/image
+Std deviation: 52.83 ms
+
+----- Inference Timing -----
+Images timed: 85
+Mean inference time: 114.71 ms/image
+Std deviation: 52.52 ms
+
+----- Inference Timing -----
+Images timed: 86
+Mean inference time: 114.87 ms/image
+Std deviation: 52.23 ms
+
+----- Inference Timing -----
+Images timed: 87
+Mean inference time: 114.85 ms/image
+Std deviation: 51.93 ms
+
+----- Inference Timing -----
+Images timed: 88
+Mean inference time: 114.95 ms/image
+Std deviation: 51.64 ms
+
+----- Inference Timing -----
+Images timed: 89
+Mean inference time: 114.94 ms/image
+Std deviation: 51.35 ms
+
+----- Inference Timing -----
+Images timed: 90
+Mean inference time: 115.06 ms/image
+Std deviation: 51.08 ms
+
+----- Inference Timing -----
+Images timed: 91
+Mean inference time: 115.09 ms/image
+Std deviation: 50.80 ms
+
+----- Inference Timing -----
+Images timed: 92
+Mean inference time: 115.10 ms/image
+Std deviation: 50.52 ms
+
+----- Inference Timing -----
+Images timed: 93
+Mean inference time: 115.09 ms/image
+Std deviation: 50.25 ms
+
+----- Inference Timing -----
+Images timed: 94
+Mean inference time: 115.16 ms/image
+Std deviation: 49.99 ms
+
+----- Inference Timing -----
+Images timed: 95
+Mean inference time: 115.07 ms/image
+Std deviation: 49.73 ms
+
+----- Inference Timing -----
+Images timed: 96
+Mean inference time: 115.03 ms/image
+Std deviation: 49.47 ms
+
+----- Inference Timing -----
+Images timed: 97
+Mean inference time: 115.02 ms/image
+Std deviation: 49.22 ms
+
+----- Inference Timing -----
+Images timed: 98
+Mean inference time: 115.03 ms/image
+Std deviation: 48.96 ms
+
+----- Inference Timing -----
+Images timed: 99
+Mean inference time: 115.00 ms/image
+Std deviation: 48.72 ms
+
+----- Inference Timing -----
+Images timed: 100
+Mean inference time: 115.00 ms/image
+Std deviation: 48.47 ms
+
+----- Inference Timing -----
+Images timed: 100
+Mean inference time: 115.00 ms/image
+Std deviation: 48.47 ms
+
+----- Inference Timing -----
+Images timed: 100
+Mean inference time: 115.00 ms/image
+Std deviation: 48.47 ms
+
+----- Inference Timing -----
+Images timed: 100
+Mean inference time: 115.00 ms/image
+Std deviation: 48.47 ms
+
+----- Inference Timing -----
+Images timed: 100
+Mean inference time: 115.00 ms/image
+Std deviation: 48.47 ms
+
+----- Inference Timing -----
+Images timed: 100
+Mean inference time: 115.00 ms/image
+Std deviation: 48.47 ms
+
+----- Inference Timing -----
+Images timed: 100
+Mean inference time: 115.00 ms/image
+Std deviation: 48.47 ms
+
+----- Inference Timing -----
+Images timed: 100
+Mean inference time: 115.00 ms/image
+Std deviation: 48.47 ms
+
+----- Inference Timing -----
+Images timed: 100
+Mean inference time: 115.00 ms/image
+Std deviation: 48.47 ms
+
+----- Inference Timing -----
+Images timed: 100
+Mean inference time: 115.00 ms/image
+Std deviation: 48.47 ms
+
+----- Inference Timing -----
+Images timed: 100
+Mean inference time: 115.00 ms/image
+Std deviation: 48.47 ms
+
+----- Inference Timing -----
+Images timed: 100
+Mean inference time: 115.00 ms/image
+Std deviation: 48.47 ms
+
+----- Inference Timing -----
+Images timed: 100
+Mean inference time: 115.00 ms/image
+Std deviation: 48.47 ms
+
+----- Inference Timing -----
+Images timed: 100
+Mean inference time: 115.00 ms/image
+Std deviation: 48.47 ms
+
+----- Inference Timing -----
+Images timed: 100
+Mean inference time: 115.00 ms/image
+Std deviation: 48.47 ms
+
+----- Inference Timing -----
+Images timed: 100
+Mean inference time: 115.00 ms/image
+Std deviation: 48.47 ms
+
+----- Inference Timing -----
+Images timed: 100
+Mean inference time: 115.00 ms/image
+Std deviation: 48.47 ms
+
+----- Inference Timing -----
+Images timed: 100
+Mean inference time: 115.00 ms/image
+Std deviation: 48.47 ms
+
+----- Inference Timing -----
+Images timed: 100
+Mean inference time: 115.00 ms/image
+Std deviation: 48.47 ms
+
+----- Inference Timing -----
+Images timed: 100
+Mean inference time: 115.00 ms/image
+Std deviation: 48.47 ms
+
+----- Inference Timing -----
+Images timed: 100
+Mean inference time: 115.00 ms/image
+Std deviation: 48.47 ms
+
+----- Inference Timing -----
+Images timed: 100
+Mean inference time: 115.00 ms/image
+Std deviation: 48.47 ms
+
+----- Inference Timing -----
+Images timed: 100
+Mean inference time: 115.00 ms/image
+Std deviation: 48.47 ms
+
+----- Inference Timing -----
+Images timed: 100
+Mean inference time: 115.00 ms/image
+Std deviation: 48.47 ms
+
+----- Inference Timing -----
+Images timed: 100
+Mean inference time: 115.00 ms/image
+Std deviation: 48.47 ms
+
+----- Inference Timing -----
+Images timed: 100
+Mean inference time: 115.00 ms/image
+Std deviation: 48.47 ms
+
+----- Inference Timing -----
+Images timed: 100
+Mean inference time: 115.00 ms/image
+Std deviation: 48.47 ms
+
+----- Inference Timing -----
+Images timed: 100
+Mean inference time: 115.00 ms/image
+Std deviation: 48.47 ms
+
+----- Inference Timing -----
+Images timed: 100
+Mean inference time: 115.00 ms/image
+Std deviation: 48.47 ms
+
+----- Inference Timing -----
+Images timed: 100
+Mean inference time: 115.00 ms/image
+Std deviation: 48.47 ms
+
+----- Inference Timing -----
+Images timed: 100
+Mean inference time: 115.00 ms/image
+Std deviation: 48.47 ms
+
+----- Inference Timing -----
+Images timed: 100
+Mean inference time: 115.00 ms/image
+Std deviation: 48.47 ms
+
+----- Inference Timing -----
+Images timed: 100
+Mean inference time: 115.00 ms/image
+Std deviation: 48.47 ms
+
+----- Inference Timing -----
+Images timed: 100
+Mean inference time: 115.00 ms/image
+Std deviation: 48.47 ms
+
+----- Inference Timing -----
+Images timed: 100
+Mean inference time: 115.00 ms/image
+Std deviation: 48.47 ms
+
+----- Inference Timing -----
+Images timed: 100
+Mean inference time: 115.00 ms/image
+Std deviation: 48.47 ms
+
+----- Inference Timing -----
+Images timed: 100
+Mean inference time: 115.00 ms/image
+Std deviation: 48.47 ms
+
+----- Inference Timing -----
+Images timed: 100
+Mean inference time: 115.00 ms/image
+Std deviation: 48.47 ms
+
+----- Inference Timing -----
+Images timed: 100
+Mean inference time: 115.00 ms/image
+Std deviation: 48.47 ms
+
+----- Inference Timing -----
+Images timed: 100
+Mean inference time: 115.00 ms/image
+Std deviation: 48.47 ms
+
+----- Inference Timing -----
+Images timed: 100
+Mean inference time: 115.00 ms/image
+Std deviation: 48.47 ms
+
+----- Inference Timing -----
+Images timed: 100
+Mean inference time: 115.00 ms/image
+Std deviation: 48.47 ms
+
+----- Inference Timing -----
+Images timed: 100
+Mean inference time: 115.00 ms/image
+Std deviation: 48.47 ms
+
+----- Inference Timing -----
+Images timed: 100
+Mean inference time: 115.00 ms/image
+Std deviation: 48.47 ms
+
+----- Inference Timing -----
+Images timed: 100
+Mean inference time: 115.00 ms/image
+Std deviation: 48.47 ms
+
+----- Inference Timing -----
+Images timed: 100
+Mean inference time: 115.00 ms/image
+Std deviation: 48.47 ms
+
+----- Inference Timing -----
+Images timed: 100
+Mean inference time: 115.00 ms/image
+Std deviation: 48.47 ms
+
+----- Inference Timing -----
+Images timed: 100
+Mean inference time: 115.00 ms/image
+Std deviation: 48.47 ms
+
+----- Inference Timing -----
+Images timed: 100
+Mean inference time: 115.00 ms/image
+Std deviation: 48.47 ms
+
+----- Inference Timing -----
+Images timed: 100
+Mean inference time: 115.00 ms/image
+Std deviation: 48.47 ms
+
+----- Inference Timing -----
+Images timed: 100
+Mean inference time: 115.00 ms/image
+Std deviation: 48.47 ms
+
+----- Inference Timing -----
+Images timed: 100
+Mean inference time: 115.00 ms/image
+Std deviation: 48.47 ms
+
+----- Inference Timing -----
+Images timed: 100
+Mean inference time: 115.00 ms/image
+Std deviation: 48.47 ms
+Saved 1966 predictions to /ghome/group07/MCV-C5-Group7/Week2/task_c/predictions/sam_yolo_predictions_0.01conf.json
+
+Running SAM with YOLO confidence 0.20
+
+----- Inference Timing -----
+Images timed: 101
+Mean inference time: 114.87 ms/image
+Std deviation: 48.25 ms
+
+----- Inference Timing -----
+Images timed: 102
+Mean inference time: 114.74 ms/image
+Std deviation: 48.03 ms
+
+----- Inference Timing -----
+Images timed: 103
+Mean inference time: 114.63 ms/image
+Std deviation: 47.81 ms
+
+----- Inference Timing -----
+Images timed: 104
+Mean inference time: 114.51 ms/image
+Std deviation: 47.59 ms
+
+----- Inference Timing -----
+Images timed: 105
+Mean inference time: 114.40 ms/image
+Std deviation: 47.38 ms
+
+----- Inference Timing -----
+Images timed: 106
+Mean inference time: 114.29 ms/image
+Std deviation: 47.17 ms
+
+----- Inference Timing -----
+Images timed: 107
+Mean inference time: 114.17 ms/image
+Std deviation: 46.96 ms
+
+----- Inference Timing -----
+Images timed: 108
+Mean inference time: 114.07 ms/image
+Std deviation: 46.76 ms
+
+----- Inference Timing -----
+Images timed: 109
+Mean inference time: 113.96 ms/image
+Std deviation: 46.56 ms
+
+----- Inference Timing -----
+Images timed: 110
+Mean inference time: 113.86 ms/image
+Std deviation: 46.36 ms
+
+----- Inference Timing -----
+Images timed: 111
+Mean inference time: 113.75 ms/image
+Std deviation: 46.16 ms
+
+----- Inference Timing -----
+Images timed: 112
+Mean inference time: 113.65 ms/image
+Std deviation: 45.97 ms
+
+----- Inference Timing -----
+Images timed: 113
+Mean inference time: 113.56 ms/image
+Std deviation: 45.77 ms
+
+----- Inference Timing -----
+Images timed: 114
+Mean inference time: 113.46 ms/image
+Std deviation: 45.58 ms
+
+----- Inference Timing -----
+Images timed: 115
+Mean inference time: 113.37 ms/image
+Std deviation: 45.40 ms
+
+----- Inference Timing -----
+Images timed: 116
+Mean inference time: 113.28 ms/image
+Std deviation: 45.21 ms
+
+----- Inference Timing -----
+Images timed: 117
+Mean inference time: 113.19 ms/image
+Std deviation: 45.03 ms
+
+----- Inference Timing -----
+Images timed: 118
+Mean inference time: 113.10 ms/image
+Std deviation: 44.85 ms
+
+----- Inference Timing -----
+Images timed: 119
+Mean inference time: 113.01 ms/image
+Std deviation: 44.67 ms
+
+----- Inference Timing -----
+Images timed: 120
+Mean inference time: 112.92 ms/image
+Std deviation: 44.49 ms
+
+----- Inference Timing -----
+Images timed: 121
+Mean inference time: 112.84 ms/image
+Std deviation: 44.32 ms
+
+----- Inference Timing -----
+Images timed: 122
+Mean inference time: 112.76 ms/image
+Std deviation: 44.15 ms
+
+----- Inference Timing -----
+Images timed: 123
+Mean inference time: 112.68 ms/image
+Std deviation: 43.97 ms
+
+----- Inference Timing -----
+Images timed: 124
+Mean inference time: 112.60 ms/image
+Std deviation: 43.81 ms
+
+----- Inference Timing -----
+Images timed: 125
+Mean inference time: 112.53 ms/image
+Std deviation: 43.64 ms
+
+----- Inference Timing -----
+Images timed: 126
+Mean inference time: 112.46 ms/image
+Std deviation: 43.47 ms
+
+----- Inference Timing -----
+Images timed: 127
+Mean inference time: 112.39 ms/image
+Std deviation: 43.31 ms
+
+----- Inference Timing -----
+Images timed: 128
+Mean inference time: 112.32 ms/image
+Std deviation: 43.14 ms
+
+----- Inference Timing -----
+Images timed: 129
+Mean inference time: 112.26 ms/image
+Std deviation: 42.98 ms
+
+----- Inference Timing -----
+Images timed: 130
+Mean inference time: 112.19 ms/image
+Std deviation: 42.82 ms
+
+----- Inference Timing -----
+Images timed: 131
+Mean inference time: 112.14 ms/image
+Std deviation: 42.66 ms
+
+----- Inference Timing -----
+Images timed: 132
+Mean inference time: 112.10 ms/image
+Std deviation: 42.50 ms
+
+----- Inference Timing -----
+Images timed: 133
+Mean inference time: 112.03 ms/image
+Std deviation: 42.35 ms
+
+----- Inference Timing -----
+Images timed: 134
+Mean inference time: 111.95 ms/image
+Std deviation: 42.20 ms
+
+----- Inference Timing -----
+Images timed: 135
+Mean inference time: 111.88 ms/image
+Std deviation: 42.05 ms
+
+----- Inference Timing -----
+Images timed: 136
+Mean inference time: 111.81 ms/image
+Std deviation: 41.91 ms
+
+----- Inference Timing -----
+Images timed: 137
+Mean inference time: 111.75 ms/image
+Std deviation: 41.76 ms
+
+----- Inference Timing -----
+Images timed: 138
+Mean inference time: 111.69 ms/image
+Std deviation: 41.61 ms
+
+----- Inference Timing -----
+Images timed: 139
+Mean inference time: 111.63 ms/image
+Std deviation: 41.47 ms
+
+----- Inference Timing -----
+Images timed: 140
+Mean inference time: 111.58 ms/image
+Std deviation: 41.33 ms
+
+----- Inference Timing -----
+Images timed: 141
+Mean inference time: 111.53 ms/image
+Std deviation: 41.18 ms
+
+----- Inference Timing -----
+Images timed: 142
+Mean inference time: 111.47 ms/image
+Std deviation: 41.04 ms
+
+----- Inference Timing -----
+Images timed: 143
+Mean inference time: 111.43 ms/image
+Std deviation: 40.90 ms
+
+----- Inference Timing -----
+Images timed: 144
+Mean inference time: 111.37 ms/image
+Std deviation: 40.77 ms
+
+----- Inference Timing -----
+Images timed: 145
+Mean inference time: 111.32 ms/image
+Std deviation: 40.63 ms
+
+----- Inference Timing -----
+Images timed: 146
+Mean inference time: 111.27 ms/image
+Std deviation: 40.49 ms
+
+----- Inference Timing -----
+Images timed: 147
+Mean inference time: 111.23 ms/image
+Std deviation: 40.36 ms
+
+----- Inference Timing -----
+Images timed: 148
+Mean inference time: 111.18 ms/image
+Std deviation: 40.23 ms
+
+----- Inference Timing -----
+Images timed: 149
+Mean inference time: 111.13 ms/image
+Std deviation: 40.10 ms
+
+----- Inference Timing -----
+Images timed: 150
+Mean inference time: 111.08 ms/image
+Std deviation: 39.97 ms
+
+----- Inference Timing -----
+Images timed: 151
+Mean inference time: 111.04 ms/image
+Std deviation: 39.84 ms
+
+----- Inference Timing -----
+Images timed: 152
+Mean inference time: 110.99 ms/image
+Std deviation: 39.71 ms
+
+----- Inference Timing -----
+Images timed: 153
+Mean inference time: 110.94 ms/image
+Std deviation: 39.59 ms
+
+----- Inference Timing -----
+Images timed: 154
+Mean inference time: 110.90 ms/image
+Std deviation: 39.46 ms
+
+----- Inference Timing -----
+Images timed: 155
+Mean inference time: 110.86 ms/image
+Std deviation: 39.34 ms
+
+----- Inference Timing -----
+Images timed: 156
+Mean inference time: 110.81 ms/image
+Std deviation: 39.21 ms
+
+----- Inference Timing -----
+Images timed: 157
+Mean inference time: 110.78 ms/image
+Std deviation: 39.09 ms
+
+----- Inference Timing -----
+Images timed: 158
+Mean inference time: 110.74 ms/image
+Std deviation: 38.97 ms
+
+----- Inference Timing -----
+Images timed: 159
+Mean inference time: 110.71 ms/image
+Std deviation: 38.85 ms
+
+----- Inference Timing -----
+Images timed: 160
+Mean inference time: 110.68 ms/image
+Std deviation: 38.73 ms
+
+----- Inference Timing -----
+Images timed: 161
+Mean inference time: 110.65 ms/image
+Std deviation: 38.61 ms
+
+----- Inference Timing -----
+Images timed: 162
+Mean inference time: 110.64 ms/image
+Std deviation: 38.49 ms
+
+----- Inference Timing -----
+Images timed: 163
+Mean inference time: 110.60 ms/image
+Std deviation: 38.38 ms
+
+----- Inference Timing -----
+Images timed: 164
+Mean inference time: 110.57 ms/image
+Std deviation: 38.26 ms
+
+----- Inference Timing -----
+Images timed: 165
+Mean inference time: 110.54 ms/image
+Std deviation: 38.15 ms
+
+----- Inference Timing -----
+Images timed: 166
+Mean inference time: 110.52 ms/image
+Std deviation: 38.04 ms
+
+----- Inference Timing -----
+Images timed: 167
+Mean inference time: 110.49 ms/image
+Std deviation: 37.92 ms
+
+----- Inference Timing -----
+Images timed: 168
+Mean inference time: 110.47 ms/image
+Std deviation: 37.81 ms
+
+----- Inference Timing -----
+Images timed: 169
+Mean inference time: 110.46 ms/image
+Std deviation: 37.70 ms
+
+----- Inference Timing -----
+Images timed: 170
+Mean inference time: 110.43 ms/image
+Std deviation: 37.59 ms
+
+----- Inference Timing -----
+Images timed: 171
+Mean inference time: 110.40 ms/image
+Std deviation: 37.48 ms
+
+----- Inference Timing -----
+Images timed: 172
+Mean inference time: 110.35 ms/image
+Std deviation: 37.38 ms
+
+----- Inference Timing -----
+Images timed: 173
+Mean inference time: 110.33 ms/image
+Std deviation: 37.27 ms
+
+----- Inference Timing -----
+Images timed: 174
+Mean inference time: 110.29 ms/image
+Std deviation: 37.17 ms
+
+----- Inference Timing -----
+Images timed: 175
+Mean inference time: 110.25 ms/image
+Std deviation: 37.06 ms
+
+----- Inference Timing -----
+Images timed: 176
+Mean inference time: 110.22 ms/image
+Std deviation: 36.96 ms
+
+----- Inference Timing -----
+Images timed: 177
+Mean inference time: 110.19 ms/image
+Std deviation: 36.86 ms
+
+----- Inference Timing -----
+Images timed: 178
+Mean inference time: 110.16 ms/image
+Std deviation: 36.76 ms
+
+----- Inference Timing -----
+Images timed: 179
+Mean inference time: 110.13 ms/image
+Std deviation: 36.66 ms
+
+----- Inference Timing -----
+Images timed: 180
+Mean inference time: 110.09 ms/image
+Std deviation: 36.56 ms
+
+----- Inference Timing -----
+Images timed: 181
+Mean inference time: 110.06 ms/image
+Std deviation: 36.46 ms
+
+----- Inference Timing -----
+Images timed: 182
+Mean inference time: 110.03 ms/image
+Std deviation: 36.36 ms
+
+----- Inference Timing -----
+Images timed: 183
+Mean inference time: 110.01 ms/image
+Std deviation: 36.26 ms
+
+----- Inference Timing -----
+Images timed: 184
+Mean inference time: 109.99 ms/image
+Std deviation: 36.17 ms
+
+----- Inference Timing -----
+Images timed: 185
+Mean inference time: 109.95 ms/image
+Std deviation: 36.07 ms
+
+----- Inference Timing -----
+Images timed: 186
+Mean inference time: 109.92 ms/image
+Std deviation: 35.98 ms
+
+----- Inference Timing -----
+Images timed: 187
+Mean inference time: 109.89 ms/image
+Std deviation: 35.88 ms
+
+----- Inference Timing -----
+Images timed: 188
+Mean inference time: 109.87 ms/image
+Std deviation: 35.79 ms
+
+----- Inference Timing -----
+Images timed: 189
+Mean inference time: 109.84 ms/image
+Std deviation: 35.69 ms
+
+----- Inference Timing -----
+Images timed: 190
+Mean inference time: 109.81 ms/image
+Std deviation: 35.60 ms
+
+----- Inference Timing -----
+Images timed: 191
+Mean inference time: 109.79 ms/image
+Std deviation: 35.51 ms
+
+----- Inference Timing -----
+Images timed: 192
+Mean inference time: 109.76 ms/image
+Std deviation: 35.42 ms
+
+----- Inference Timing -----
+Images timed: 193
+Mean inference time: 109.73 ms/image
+Std deviation: 35.33 ms
+
+----- Inference Timing -----
+Images timed: 194
+Mean inference time: 109.72 ms/image
+Std deviation: 35.24 ms
+
+----- Inference Timing -----
+Images timed: 195
+Mean inference time: 109.70 ms/image
+Std deviation: 35.15 ms
+
+----- Inference Timing -----
+Images timed: 196
+Mean inference time: 109.68 ms/image
+Std deviation: 35.06 ms
+
+----- Inference Timing -----
+Images timed: 197
+Mean inference time: 109.66 ms/image
+Std deviation: 34.97 ms
+
+----- Inference Timing -----
+Images timed: 198
+Mean inference time: 109.65 ms/image
+Std deviation: 34.89 ms
+
+----- Inference Timing -----
+Images timed: 199
+Mean inference time: 109.63 ms/image
+Std deviation: 34.80 ms
+
+----- Inference Timing -----
+Images timed: 200
+Mean inference time: 109.62 ms/image
+Std deviation: 34.71 ms
+
+----- Inference Timing -----
+Images timed: 200
+Mean inference time: 109.62 ms/image
+Std deviation: 34.71 ms
+
+----- Inference Timing -----
+Images timed: 200
+Mean inference time: 109.62 ms/image
+Std deviation: 34.71 ms
+
+----- Inference Timing -----
+Images timed: 200
+Mean inference time: 109.62 ms/image
+Std deviation: 34.71 ms
+
+----- Inference Timing -----
+Images timed: 200
+Mean inference time: 109.62 ms/image
+Std deviation: 34.71 ms
+
+----- Inference Timing -----
+Images timed: 200
+Mean inference time: 109.62 ms/image
+Std deviation: 34.71 ms
+
+----- Inference Timing -----
+Images timed: 200
+Mean inference time: 109.62 ms/image
+Std deviation: 34.71 ms
+
+----- Inference Timing -----
+Images timed: 200
+Mean inference time: 109.62 ms/image
+Std deviation: 34.71 ms
+
+----- Inference Timing -----
+Images timed: 200
+Mean inference time: 109.62 ms/image
+Std deviation: 34.71 ms
+
+----- Inference Timing -----
+Images timed: 200
+Mean inference time: 109.62 ms/image
+Std deviation: 34.71 ms
+
+----- Inference Timing -----
+Images timed: 200
+Mean inference time: 109.62 ms/image
+Std deviation: 34.71 ms
+
+----- Inference Timing -----
+Images timed: 200
+Mean inference time: 109.62 ms/image
+Std deviation: 34.71 ms
+
+----- Inference Timing -----
+Images timed: 200
+Mean inference time: 109.62 ms/image
+Std deviation: 34.71 ms
+
+----- Inference Timing -----
+Images timed: 200
+Mean inference time: 109.62 ms/image
+Std deviation: 34.71 ms
+
+----- Inference Timing -----
+Images timed: 200
+Mean inference time: 109.62 ms/image
+Std deviation: 34.71 ms
+
+----- Inference Timing -----
+Images timed: 200
+Mean inference time: 109.62 ms/image
+Std deviation: 34.71 ms
+
+----- Inference Timing -----
+Images timed: 200
+Mean inference time: 109.62 ms/image
+Std deviation: 34.71 ms
+
+----- Inference Timing -----
+Images timed: 200
+Mean inference time: 109.62 ms/image
+Std deviation: 34.71 ms
+
+----- Inference Timing -----
+Images timed: 200
+Mean inference time: 109.62 ms/image
+Std deviation: 34.71 ms
+
+----- Inference Timing -----
+Images timed: 200
+Mean inference time: 109.62 ms/image
+Std deviation: 34.71 ms
+
+----- Inference Timing -----
+Images timed: 200
+Mean inference time: 109.62 ms/image
+Std deviation: 34.71 ms
+
+----- Inference Timing -----
+Images timed: 200
+Mean inference time: 109.62 ms/image
+Std deviation: 34.71 ms
+
+----- Inference Timing -----
+Images timed: 200
+Mean inference time: 109.62 ms/image
+Std deviation: 34.71 ms
+
+----- Inference Timing -----
+Images timed: 200
+Mean inference time: 109.62 ms/image
+Std deviation: 34.71 ms
+
+----- Inference Timing -----
+Images timed: 200
+Mean inference time: 109.62 ms/image
+Std deviation: 34.71 ms
+
+----- Inference Timing -----
+Images timed: 200
+Mean inference time: 109.62 ms/image
+Std deviation: 34.71 ms
+
+----- Inference Timing -----
+Images timed: 200
+Mean inference time: 109.62 ms/image
+Std deviation: 34.71 ms
+
+----- Inference Timing -----
+Images timed: 200
+Mean inference time: 109.62 ms/image
+Std deviation: 34.71 ms
+
+----- Inference Timing -----
+Images timed: 200
+Mean inference time: 109.62 ms/image
+Std deviation: 34.71 ms
+
+----- Inference Timing -----
+Images timed: 200
+Mean inference time: 109.62 ms/image
+Std deviation: 34.71 ms
+
+----- Inference Timing -----
+Images timed: 200
+Mean inference time: 109.62 ms/image
+Std deviation: 34.71 ms
+
+----- Inference Timing -----
+Images timed: 200
+Mean inference time: 109.62 ms/image
+Std deviation: 34.71 ms
+Saved 493 predictions to /ghome/group07/MCV-C5-Group7/Week2/task_c/predictions/sam_yolo_predictions_0.20conf.json
+
+Running SAM with YOLO confidence 0.50
+
+----- Inference Timing -----
+Images timed: 201
+Mean inference time: 109.58 ms/image
+Std deviation: 34.63 ms
+
+----- Inference Timing -----
+Images timed: 202
+Mean inference time: 109.56 ms/image
+Std deviation: 34.55 ms
+
+----- Inference Timing -----
+Images timed: 203
+Mean inference time: 109.52 ms/image
+Std deviation: 34.46 ms
+
+----- Inference Timing -----
+Images timed: 204
+Mean inference time: 109.49 ms/image
+Std deviation: 34.38 ms
+
+----- Inference Timing -----
+Images timed: 205
+Mean inference time: 109.46 ms/image
+Std deviation: 34.30 ms
+
+----- Inference Timing -----
+Images timed: 206
+Mean inference time: 109.42 ms/image
+Std deviation: 34.22 ms
+
+----- Inference Timing -----
+Images timed: 207
+Mean inference time: 109.39 ms/image
+Std deviation: 34.14 ms
+
+----- Inference Timing -----
+Images timed: 208
+Mean inference time: 109.35 ms/image
+Std deviation: 34.06 ms
+
+----- Inference Timing -----
+Images timed: 209
+Mean inference time: 109.32 ms/image
+Std deviation: 33.99 ms
+
+----- Inference Timing -----
+Images timed: 210
+Mean inference time: 109.29 ms/image
+Std deviation: 33.91 ms
+
+----- Inference Timing -----
+Images timed: 211
+Mean inference time: 109.27 ms/image
+Std deviation: 33.83 ms
+
+----- Inference Timing -----
+Images timed: 212
+Mean inference time: 109.24 ms/image
+Std deviation: 33.75 ms
+
+----- Inference Timing -----
+Images timed: 213
+Mean inference time: 109.21 ms/image
+Std deviation: 33.67 ms
+
+----- Inference Timing -----
+Images timed: 214
+Mean inference time: 109.19 ms/image
+Std deviation: 33.60 ms
+
+----- Inference Timing -----
+Images timed: 215
+Mean inference time: 109.16 ms/image
+Std deviation: 33.52 ms
+
+----- Inference Timing -----
+Images timed: 216
+Mean inference time: 109.13 ms/image
+Std deviation: 33.45 ms
+
+----- Inference Timing -----
+Images timed: 217
+Mean inference time: 109.10 ms/image
+Std deviation: 33.37 ms
+
+----- Inference Timing -----
+Images timed: 218
+Mean inference time: 109.07 ms/image
+Std deviation: 33.30 ms
+
+----- Inference Timing -----
+Images timed: 219
+Mean inference time: 109.04 ms/image
+Std deviation: 33.23 ms
+
+----- Inference Timing -----
+Images timed: 220
+Mean inference time: 109.01 ms/image
+Std deviation: 33.15 ms
+
+----- Inference Timing -----
+Images timed: 221
+Mean inference time: 108.99 ms/image
+Std deviation: 33.08 ms
+
+----- Inference Timing -----
+Images timed: 222
+Mean inference time: 108.96 ms/image
+Std deviation: 33.01 ms
+
+----- Inference Timing -----
+Images timed: 223
+Mean inference time: 108.94 ms/image
+Std deviation: 32.94 ms
+
+----- Inference Timing -----
+Images timed: 224
+Mean inference time: 108.91 ms/image
+Std deviation: 32.86 ms
+
+----- Inference Timing -----
+Images timed: 225
+Mean inference time: 108.89 ms/image
+Std deviation: 32.79 ms
+
+----- Inference Timing -----
+Images timed: 226
+Mean inference time: 108.86 ms/image
+Std deviation: 32.72 ms
+
+----- Inference Timing -----
+Images timed: 227
+Mean inference time: 108.84 ms/image
+Std deviation: 32.65 ms
+
+----- Inference Timing -----
+Images timed: 228
+Mean inference time: 108.82 ms/image
+Std deviation: 32.58 ms
+
+----- Inference Timing -----
+Images timed: 229
+Mean inference time: 108.80 ms/image
+Std deviation: 32.51 ms
+
+----- Inference Timing -----
+Images timed: 230
+Mean inference time: 108.78 ms/image
+Std deviation: 32.44 ms
+
+----- Inference Timing -----
+Images timed: 231
+Mean inference time: 108.76 ms/image
+Std deviation: 32.37 ms
+
+----- Inference Timing -----
+Images timed: 232
+Mean inference time: 108.74 ms/image
+Std deviation: 32.31 ms
+
+----- Inference Timing -----
+Images timed: 233
+Mean inference time: 108.72 ms/image
+Std deviation: 32.24 ms
+
+----- Inference Timing -----
+Images timed: 234
+Mean inference time: 108.70 ms/image
+Std deviation: 32.17 ms
+
+----- Inference Timing -----
+Images timed: 235
+Mean inference time: 108.68 ms/image
+Std deviation: 32.10 ms
+
+----- Inference Timing -----
+Images timed: 236
+Mean inference time: 108.67 ms/image
+Std deviation: 32.04 ms
+
+----- Inference Timing -----
+Images timed: 237
+Mean inference time: 108.65 ms/image
+Std deviation: 31.97 ms
+
+----- Inference Timing -----
+Images timed: 238
+Mean inference time: 108.63 ms/image
+Std deviation: 31.90 ms
+
+----- Inference Timing -----
+Images timed: 239
+Mean inference time: 108.62 ms/image
+Std deviation: 31.84 ms
+
+----- Inference Timing -----
+Images timed: 240
+Mean inference time: 108.60 ms/image
+Std deviation: 31.77 ms
+
+----- Inference Timing -----
+Images timed: 241
+Mean inference time: 108.58 ms/image
+Std deviation: 31.71 ms
+
+----- Inference Timing -----
+Images timed: 242
+Mean inference time: 108.57 ms/image
+Std deviation: 31.64 ms
+
+----- Inference Timing -----
+Images timed: 243
+Mean inference time: 108.55 ms/image
+Std deviation: 31.58 ms
+
+----- Inference Timing -----
+Images timed: 244
+Mean inference time: 108.53 ms/image
+Std deviation: 31.52 ms
+
+----- Inference Timing -----
+Images timed: 245
+Mean inference time: 108.51 ms/image
+Std deviation: 31.45 ms
+
+----- Inference Timing -----
+Images timed: 246
+Mean inference time: 108.49 ms/image
+Std deviation: 31.39 ms
+
+----- Inference Timing -----
+Images timed: 247
+Mean inference time: 108.48 ms/image
+Std deviation: 31.33 ms
+
+----- Inference Timing -----
+Images timed: 248
+Mean inference time: 108.47 ms/image
+Std deviation: 31.26 ms
+
+----- Inference Timing -----
+Images timed: 249
+Mean inference time: 108.46 ms/image
+Std deviation: 31.20 ms
+
+----- Inference Timing -----
+Images timed: 250
+Mean inference time: 108.45 ms/image
+Std deviation: 31.14 ms
+
+----- Inference Timing -----
+Images timed: 251
+Mean inference time: 108.42 ms/image
+Std deviation: 31.08 ms
+
+----- Inference Timing -----
+Images timed: 252
+Mean inference time: 108.40 ms/image
+Std deviation: 31.02 ms
+
+----- Inference Timing -----
+Images timed: 253
+Mean inference time: 108.39 ms/image
+Std deviation: 30.96 ms
+
+----- Inference Timing -----
+Images timed: 254
+Mean inference time: 108.37 ms/image
+Std deviation: 30.90 ms
+
+----- Inference Timing -----
+Images timed: 255
+Mean inference time: 108.35 ms/image
+Std deviation: 30.84 ms
+
+----- Inference Timing -----
+Images timed: 256
+Mean inference time: 108.34 ms/image
+Std deviation: 30.78 ms
+
+----- Inference Timing -----
+Images timed: 257
+Mean inference time: 108.32 ms/image
+Std deviation: 30.72 ms
+
+----- Inference Timing -----
+Images timed: 258
+Mean inference time: 108.30 ms/image
+Std deviation: 30.66 ms
+
+----- Inference Timing -----
+Images timed: 259
+Mean inference time: 108.29 ms/image
+Std deviation: 30.61 ms
+
+----- Inference Timing -----
+Images timed: 260
+Mean inference time: 108.28 ms/image
+Std deviation: 30.55 ms
+
+----- Inference Timing -----
+Images timed: 261
+Mean inference time: 108.26 ms/image
+Std deviation: 30.49 ms
+
+----- Inference Timing -----
+Images timed: 262
+Mean inference time: 108.24 ms/image
+Std deviation: 30.43 ms
+
+----- Inference Timing -----
+Images timed: 263
+Mean inference time: 108.22 ms/image
+Std deviation: 30.38 ms
+
+----- Inference Timing -----
+Images timed: 264
+Mean inference time: 108.20 ms/image
+Std deviation: 30.32 ms
+
+----- Inference Timing -----
+Images timed: 265
+Mean inference time: 108.18 ms/image
+Std deviation: 30.27 ms
+
+----- Inference Timing -----
+Images timed: 266
+Mean inference time: 108.17 ms/image
+Std deviation: 30.21 ms
+
+----- Inference Timing -----
+Images timed: 267
+Mean inference time: 108.16 ms/image
+Std deviation: 30.15 ms
+
+----- Inference Timing -----
+Images timed: 268
+Mean inference time: 108.15 ms/image
+Std deviation: 30.10 ms
+
+----- Inference Timing -----
+Images timed: 269
+Mean inference time: 108.13 ms/image
+Std deviation: 30.04 ms
+
+----- Inference Timing -----
+Images timed: 270
+Mean inference time: 108.11 ms/image
+Std deviation: 29.99 ms
+
+----- Inference Timing -----
+Images timed: 271
+Mean inference time: 108.09 ms/image
+Std deviation: 29.93 ms
+
+----- Inference Timing -----
+Images timed: 272
+Mean inference time: 108.08 ms/image
+Std deviation: 29.88 ms
+
+----- Inference Timing -----
+Images timed: 273
+Mean inference time: 108.07 ms/image
+Std deviation: 29.83 ms
+
+----- Inference Timing -----
+Images timed: 274
+Mean inference time: 108.05 ms/image
+Std deviation: 29.77 ms
+
+----- Inference Timing -----
+Images timed: 275
+Mean inference time: 108.05 ms/image
+Std deviation: 29.72 ms
+
+----- Inference Timing -----
+Images timed: 276
+Mean inference time: 108.03 ms/image
+Std deviation: 29.67 ms
+
+----- Inference Timing -----
+Images timed: 277
+Mean inference time: 108.02 ms/image
+Std deviation: 29.61 ms
+
+----- Inference Timing -----
+Images timed: 278
+Mean inference time: 108.01 ms/image
+Std deviation: 29.56 ms
+
+----- Inference Timing -----
+Images timed: 279
+Mean inference time: 108.00 ms/image
+Std deviation: 29.51 ms
+
+----- Inference Timing -----
+Images timed: 280
+Mean inference time: 108.00 ms/image
+Std deviation: 29.46 ms
+
+----- Inference Timing -----
+Images timed: 281
+Mean inference time: 107.99 ms/image
+Std deviation: 29.40 ms
+
+----- Inference Timing -----
+Images timed: 282
+Mean inference time: 107.98 ms/image
+Std deviation: 29.35 ms
+
+----- Inference Timing -----
+Images timed: 283
+Mean inference time: 107.97 ms/image
+Std deviation: 29.30 ms
+
+----- Inference Timing -----
+Images timed: 284
+Mean inference time: 107.96 ms/image
+Std deviation: 29.25 ms
+
+----- Inference Timing -----
+Images timed: 285
+Mean inference time: 107.95 ms/image
+Std deviation: 29.20 ms
+
+----- Inference Timing -----
+Images timed: 286
+Mean inference time: 107.95 ms/image
+Std deviation: 29.15 ms
+
+----- Inference Timing -----
+Images timed: 287
+Mean inference time: 107.94 ms/image
+Std deviation: 29.10 ms
+
+----- Inference Timing -----
+Images timed: 288
+Mean inference time: 107.93 ms/image
+Std deviation: 29.05 ms
+
+----- Inference Timing -----
+Images timed: 289
+Mean inference time: 107.92 ms/image
+Std deviation: 29.00 ms
+
+----- Inference Timing -----
+Images timed: 290
+Mean inference time: 107.91 ms/image
+Std deviation: 28.95 ms
+
+----- Inference Timing -----
+Images timed: 291
+Mean inference time: 107.90 ms/image
+Std deviation: 28.90 ms
+
+----- Inference Timing -----
+Images timed: 292
+Mean inference time: 107.89 ms/image
+Std deviation: 28.85 ms
+
+----- Inference Timing -----
+Images timed: 293
+Mean inference time: 107.88 ms/image
+Std deviation: 28.80 ms
+
+----- Inference Timing -----
+Images timed: 294
+Mean inference time: 107.87 ms/image
+Std deviation: 28.75 ms
+
+----- Inference Timing -----
+Images timed: 295
+Mean inference time: 107.86 ms/image
+Std deviation: 28.70 ms
+
+----- Inference Timing -----
+Images timed: 296
+Mean inference time: 107.85 ms/image
+Std deviation: 28.65 ms
+
+----- Inference Timing -----
+Images timed: 297
+Mean inference time: 107.85 ms/image
+Std deviation: 28.61 ms
+
+----- Inference Timing -----
+Images timed: 298
+Mean inference time: 107.84 ms/image
+Std deviation: 28.56 ms
+
+----- Inference Timing -----
+Images timed: 299
+Mean inference time: 107.84 ms/image
+Std deviation: 28.51 ms
+
+----- Inference Timing -----
+Images timed: 300
+Mean inference time: 107.83 ms/image
+Std deviation: 28.46 ms
+
+----- Inference Timing -----
+Images timed: 300
+Mean inference time: 107.83 ms/image
+Std deviation: 28.46 ms
+
+----- Inference Timing -----
+Images timed: 300
+Mean inference time: 107.83 ms/image
+Std deviation: 28.46 ms
+
+----- Inference Timing -----
+Images timed: 300
+Mean inference time: 107.83 ms/image
+Std deviation: 28.46 ms
+
+----- Inference Timing -----
+Images timed: 300
+Mean inference time: 107.83 ms/image
+Std deviation: 28.46 ms
+
+----- Inference Timing -----
+Images timed: 300
+Mean inference time: 107.83 ms/image
+Std deviation: 28.46 ms
+
+----- Inference Timing -----
+Images timed: 300
+Mean inference time: 107.83 ms/image
+Std deviation: 28.46 ms
+
+----- Inference Timing -----
+Images timed: 300
+Mean inference time: 107.83 ms/image
+Std deviation: 28.46 ms
+
+----- Inference Timing -----
+Images timed: 300
+Mean inference time: 107.83 ms/image
+Std deviation: 28.46 ms
+
+----- Inference Timing -----
+Images timed: 300
+Mean inference time: 107.83 ms/image
+Std deviation: 28.46 ms
+
+----- Inference Timing -----
+Images timed: 300
+Mean inference time: 107.83 ms/image
+Std deviation: 28.46 ms
+
+----- Inference Timing -----
+Images timed: 300
+Mean inference time: 107.83 ms/image
+Std deviation: 28.46 ms
+
+----- Inference Timing -----
+Images timed: 300
+Mean inference time: 107.83 ms/image
+Std deviation: 28.46 ms
+
+----- Inference Timing -----
+Images timed: 300
+Mean inference time: 107.83 ms/image
+Std deviation: 28.46 ms
+
+----- Inference Timing -----
+Images timed: 300
+Mean inference time: 107.83 ms/image
+Std deviation: 28.46 ms
+Saved 326 predictions to /ghome/group07/MCV-C5-Group7/Week2/task_c/predictions/sam_yolo_predictions_0.50conf.json
+
+Running SAM with YOLO confidence 0.70

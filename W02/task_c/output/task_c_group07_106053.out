@@ -1,0 +1,15 @@
+
+Running SAM with YOLO confidence 0.01
+Saved 143233 predictions to /ghome/group07/MCV-C5-Group7/Week2/task_c/predictions/sam_yolo_predictions_0.01conf.json
+
+Running SAM with YOLO confidence 0.20
+Saved 38826 predictions to /ghome/group07/MCV-C5-Group7/Week2/task_c/predictions/sam_yolo_predictions_0.20conf.json
+
+Running SAM with YOLO confidence 0.50
+Saved 27283 predictions to /ghome/group07/MCV-C5-Group7/Week2/task_c/predictions/sam_yolo_predictions_0.50conf.json
+
+Running SAM with YOLO confidence 0.70
+Saved 21672 predictions to /ghome/group07/MCV-C5-Group7/Week2/task_c/predictions/sam_yolo_predictions_0.70conf.json
+
+Running SAM with YOLO confidence 0.90
+Saved 10424 predictions to /ghome/group07/MCV-C5-Group7/Week2/task_c/predictions/sam_yolo_predictions_0.90conf.json
