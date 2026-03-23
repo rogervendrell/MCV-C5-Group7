@@ -23,6 +23,7 @@ Experiments are organized **by week and task**, following the structure of the c
 .
 ├── W01                # Week 1: Object Detection
 ├── W02                # Week 2: SAM and Segmentation
+├── Week3              # Week 3: Image Captioning
 ├── job_templates      # SLURM templates for cluster jobs
 ├── requirements.txt
 └── README.md
@@ -419,6 +420,182 @@ Dataset used:
 `W02/task_h/`
 
 Additional experiments and analysis scripts.
+
+</details>
+
+---
+
+# Week 3 – Image Captioning
+
+<details>
+<summary><b>Click to expand Week 3 details</b></summary>
+
+Week 3 focuses on **image captioning** using the **VizWiz dataset** — a collection of images taken by blind users paired with crowd-sourced captions.
+
+The experiments progressively increase model complexity, moving from a character-level GRU baseline to word-level and subword-level tokenization, stronger encoders, LSTM decoders, and finally a Transformer decoder with attention.
+
+---
+
+## Week 3 Tasks
+
+**a. Baseline: ResNet-18 + GRU (character-level)**
+
+* Train a character-level encoder-decoder model.
+* Encoder: **ResNet-18** (pretrained).
+* Decoder: multi-layer **GRU**.
+* Evaluate using **BLEU** and **CIDEr** metrics.
+
+---
+
+**b. Tokenization Variants**
+
+Explore different tokenization strategies for the decoder:
+
+* **Character-level** – one token per character.
+* **Word-level** – standard whitespace tokenization.
+* **Subword-level** – **SentencePiece** BPE tokenization.
+
+Analyze the effect on vocabulary size, training stability, and caption quality.
+
+---
+
+**c. Stronger Encoder**
+
+Replace ResNet-18 with **ResNet-34** and evaluate the impact on captioning performance.
+
+Optionally unfreeze the last encoder stage during fine-tuning.
+
+---
+
+**d. LSTM Decoder**
+
+Swap the GRU decoder for an **LSTM decoder** with dropout regularization.
+
+Experiment with:
+
+* hidden size
+* number of layers
+* encoder backbone (ResNet-18 vs ResNet-34 vs ResNet-50)
+
+---
+
+**e. Transformer Decoder with Attention**
+
+Replace the recurrent decoder with a **Transformer decoder** (multi-head self-attention + cross-attention).
+
+Key components:
+
+* Sinusoidal **positional encoding**
+* Teacher forcing during training
+* Temperature-controlled sampling at inference
+
+---
+
+**f. Qualitative Analysis**
+
+Generate and visualize captions for sample images.
+
+Compare outputs across models and tokenization strategies.
+
+---
+
+## Week 3 Implementation Structure
+
+### Baseline (character-level GRU)
+
+`Week3/1-baseline/`
+
+Character-level encoder-decoder baseline.
+
+Main components:
+
+* `model.py` – ResNet-18 encoder + GRU decoder
+* `train.py` – training loop with teacher forcing
+* `dataset.py` – VizWiz dataset loader
+* `vocabulary.py` – character vocabulary
+* `metrics.py` – BLEU / CIDEr evaluation
+* `main.py` – entry point
+* `run.sh` / `evaluate.sh` – cluster scripts
+
+---
+
+### Baseline (word-level GRU)
+
+`Week3/1-baseline-wordlevel/`
+
+Word-level variant of the baseline. Same architecture with a word vocabulary and optional regularization experiments.
+
+---
+
+### Baseline (subword-level GRU)
+
+`Week3/1-baseline-subwordlevel/`
+
+Subword tokenization using **SentencePiece BPE**.
+
+Additional files:
+
+* `tokenizer.py` – SentencePiece wrapper
+* `sp_model.model` / `sp_model.vocab` – trained BPE model
+
+---
+
+### Stronger Encoder (ResNet-34 + GRU)
+
+`Week3/2-encoder/`
+
+Replaces ResNet-18 with ResNet-34 with optional partial unfreezing of the encoder.
+
+---
+
+### LSTM Decoder
+
+`Week3/3-lstm/`
+
+ResNet encoder paired with an **LSTM decoder** with dropout and configurable hidden size.
+
+---
+
+### Transformer Decoder (Attention)
+
+`Week3/4-attention/`
+
+ResNet encoder paired with a **Transformer decoder**.
+
+Key components:
+
+* Positional encoding
+* Multi-head attention
+* Teacher forcing + temperature sampling
+
+Cluster script: `w3_transformer_layers.sh`
+
+---
+
+### Plots and Analysis
+
+`Week3/0-plots/`
+
+Plotting and parsing utilities for experiment results.
+
+Organized by experiment type:
+
+* `char-vs-subword-vs-word/` – tokenization comparison
+* `encoder/` – encoder ablation
+* `encoder-decoder-lstm/` – LSTM decoder results
+* `encoder-decoder-transformer/` – Transformer decoder results
+* `hyperparameter_search/` – learning rate and batch size sweeps
+* `regularization/` – dropout and weight decay experiments
+* `teacher-forcing/` – teacher forcing ratio analysis
+* `temperature/` – inference temperature analysis
+
+---
+
+### Qualitative Analysis
+
+`Week3/0-qualitative/`
+
+Script to generate and display sample captions for qualitative evaluation.
 
 </details>
 
