@@ -2,12 +2,13 @@
 
 This repository contains the implementation for the **MCV-C5 Computer Vision project**.
 
-The project explores **object detection and segmentation approaches** across multiple frameworks and foundation models:
+The project covers **object detection, segmentation, and image captioning** across multiple frameworks and foundation models:
 
 * **Ultralytics YOLO**
 * **Torchvision detection models (Faster R-CNN)**
 * **HuggingFace models (DETR / RT-DETR)**
 * **Segment Anything Model (SAM)**
+* **Encoder-decoder captioning models (ResNet + GRU / LSTM / Transformer)**
 
 Experiments are organized **by week and task**, following the structure of the course assignment.
 
