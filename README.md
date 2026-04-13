@@ -22,9 +22,10 @@ Experiments are organized **by week and task**, following the structure of the c
 
 ```
 .
-├── W01                # Week 1: Object Detection
-├── W02                # Week 2: SAM and Segmentation
-├── Week3              # Week 3: Image Captioning
+├── Week1              # Object Detection
+├── Week2              # SAM and Segmentation
+├── Week3              # Image Captioning
+├── Week4              # Vision-Language Models
 ├── job_templates      # SLURM templates for cluster jobs
 ├── requirements.txt
 └── README.md
@@ -597,6 +598,137 @@ Organized by experiment type:
 `Week3/0-qualitative/`
 
 Script to generate and display sample captions for qualitative evaluation.
+
+</details>
+
+---
+
+# Week 4 – Vision-Language Models
+
+<details>
+<summary><b>Click to expand Week 4 details</b></summary>
+
+Week 4 extends image captioning by replacing the custom encoder-decoder architectures of Week 3 with **pretrained Vision-Language Models (VLMs)**. Experiments are conducted on the same **VizWiz dataset** and evaluated with the same **BLEU** and **CIDEr** metrics.
+
+The week is split into two tasks:
+
+* **Task 1** – ViT + GPT-2 with flexible fine-tuning strategies.
+* **Task 2** – Qwen3 Vision-Language models with LoRA fine-tuning, plus CLIP-based analysis.
+
+---
+
+## Week 4 Tasks
+
+**Task 1 – ViT + GPT-2 Image Captioning**
+
+Use a `VisionEncoderDecoderModel` combining a **Vision Transformer (ViT)** encoder and a **GPT-2** decoder for image captioning.
+
+Fine-tuning strategies explored:
+
+* **pretrained** – both encoder and decoder frozen; evaluation only.
+* **vit_frozen_gpt_ft** – ViT encoder frozen; GPT-2 decoder fine-tuned via cross-attention weights only (preserves language generation behavior).
+* **vit_ft_gpt_frozen** – ViT encoder fine-tuned (last N layers); GPT-2 decoder frozen.
+* **vit_ft_gpt_ft** – both encoder and decoder fine-tuned jointly.
+
+Encoder fine-tuning modes: `frozen`, `last_n`, `full`.
+
+Decoder fine-tuning modes: `frozen`, `cross_attn`, `last_n`, `full`.
+
+Regularization levers: learning rate, weight decay, label smoothing, gradient clipping, repetition penalty.
+
+---
+
+**Task 2 – Qwen3 VLM with LoRA Fine-tuning**
+
+Use **Qwen3 Vision-Language models** as image captioning systems.
+
+Strategies evaluated:
+
+* **zero_shot_8b** – zero-shot evaluation with Qwen3-VL-8B-Instruct; no training.
+* **baseline_2b / baseline_4b** – zero-shot baselines with Qwen3-VL-2B and 4B before fine-tuning.
+* **lora_2b** – frozen ViT encoder (best Task 1 weights) + LoRA-fine-tuned Qwen3-1.7B decoder.
+* **lora_4b** – frozen ViT encoder + LoRA-fine-tuned Qwen3-4B decoder.
+
+Architecture for LoRA strategies:
+
+1. Frozen ViT (fine-tuned in Task 1) → linear projection → LoRA-adapted Qwen3 (text decoder).
+2. Only the projection layer and the LoRA adapters are updated during training.
+
+Additional analysis:
+
+* **CLIP-based analysis** – evaluate visual-text alignment using CLIP embeddings.
+
+---
+
+## Week 4 Implementation Structure
+
+### Task 1 – ViT + GPT-2
+
+`Week4/Task1/`
+
+ViT + GPT-2 encoder-decoder captioning with regular fine-tuning.
+
+Main components:
+
+* `model.py` – `VisionEncoderDecoderCaptioningModel` with configurable encoder/decoder fine-tuning modes
+* `train.py` – training loop with teacher forcing and regularization
+* `dataset.py` – VizWiz dataset loader
+* `main.py` – entry point; selects fine-tuning strategy via CLI
+* `metrics.py` – BLEU / CIDEr evaluation
+* `visualization.py` – caption visualization utilities
+* `compare_results.py` – cross-experiment result comparison
+
+Cluster job scripts:
+
+* `vit_gpt2_pretrained.sh` – evaluation only (both frozen)
+* `vit_gpt2_vit_frozen_gpt_ft.sh` – frozen ViT, fine-tuned GPT-2
+* `vit_gpt2_vit_ft_gpt_frozen.sh` – fine-tuned ViT, frozen GPT-2
+* `vit_gpt2_vit_ft_gpt_frozen_continue.sh` – resume ViT fine-tuning
+* `vit_gpt2_vit_ft_gpt_ft.sh` – both components fine-tuned
+
+---
+
+### Task 2 – Qwen3 VLM with LoRA
+
+`Week4/Task2/`
+
+Frozen ViT + LoRA-fine-tuned Qwen3 captioning.
+
+Main components:
+
+* `model.py` – `FrozenViTEncoder` + `ViTCausalLMCaptioningModel` with LoRA adapters
+* `train.py` – LoRA fine-tuning loop
+* `dataset.py` – VizWiz dataset loader
+* `main.py` – entry point; selects model size and strategy via CLI
+* `metrics.py` – BLEU / CIDEr evaluation
+* `visualization.py` – caption visualization utilities
+* `compare_results.py` – cross-experiment result comparison
+
+Cluster job scripts:
+
+* `qwen_2b_baseline.sh` – zero-shot baseline with 2B model
+* `qwen_4b_baseline.sh` – zero-shot baseline with 4B model
+* `qwen_2b_lora.sh` – LoRA fine-tuning with 2B model
+* `qwen_4b_lora.sh` – LoRA fine-tuning with 4B model
+* `qwen_2b_lora_eval.sh` – evaluation of fine-tuned 2B model
+* `qwen_8b_eval.sh` – zero-shot evaluation with 8B model
+
+---
+
+### CLIP Analysis
+
+`Week4/Task2/clip_analysis/`
+
+CLIP-based visual-text alignment analysis.
+
+Main components:
+
+* `clip_analysis.py` – CLIP embedding computation and similarity analysis
+
+Cluster job scripts:
+
+* `run_clip_analysis_2b.sh` – CLIP analysis for 2B model outputs
+* `run_clip_analysis_8b.sh` – CLIP analysis for 8B model outputs
 
 </details>
 
