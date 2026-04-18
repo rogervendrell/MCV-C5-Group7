@@ -1,16 +1,45 @@
-torch=2.4.0
-torchvision=0.21.0
-torchaudio=2.4.0
+# Core deep learning
+torch==2.4.0
+torchvision==0.21.0
+torchaudio==2.4.0
+
+# Detection & segmentation
 ultralytics
-nvitop
-wandb
-tqdm
-segment_anything
+segment-anything
 pycocotools
-PIL
-datasets
-opencv-python
-matplotlib
-numpy
+
+# Diffusion models
+diffusers
+accelerate
+
+# Vision-language & transformers
 transformers
+datasets
+peft
+evaluate
+sentencepiece
+
+# Image processing
+Pillow
+opencv-python
+albumentations
+
+# Metrics
+nltk
+rouge-score
+sacrebleu
+
+# Data science
+numpy
+pandas
+scipy
+scikit-learn
+seaborn
+matplotlib
 plotly
+
+# Utilities
+tqdm
+wandb
+nvitop
+requests
