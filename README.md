@@ -2,13 +2,15 @@
 
 This repository contains the implementation for the **MCV-C5 Computer Vision project**.
 
-The project covers **object detection, segmentation, and image captioning** across multiple frameworks and foundation models:
+The project covers **object detection, segmentation, image captioning, and synthetic data generation** across multiple frameworks and foundation models:
 
 * **Ultralytics YOLO**
 * **Torchvision detection models (Faster R-CNN)**
 * **HuggingFace models (DETR / RT-DETR)**
 * **Segment Anything Model (SAM)**
 * **Encoder-decoder captioning models (ResNet + GRU / LSTM / Transformer)**
+* **ViT + LoRA-tuned Qwen3 captioning model**
+* **Stable Diffusion models (SDXL, SDXL-Turbo, SD3.5-Medium)**
 
 Experiments are organized **by week and task**, following the structure of the course assignment.
 
@@ -22,10 +24,11 @@ Experiments are organized **by week and task**, following the structure of the c
 
 ```
 .
-├── Week1              # Object Detection
-├── Week2              # SAM and Segmentation
-├── Week3              # Image Captioning
-├── Week4              # Vision-Language Models
+├── W01                # Week 1: Object Detection
+├── W02                # Week 2: SAM and Segmentation
+├── Week3              # Week 3: Image Captioning
+├── Week4              # Week 4: ViT + Qwen3 Captioning
+├── Week5              # Week 5: Diffusion Models & Synthetic Augmentation
 ├── job_templates      # SLURM templates for cluster jobs
 ├── requirements.txt
 └── README.md
@@ -603,132 +606,132 @@ Script to generate and display sample captions for qualitative evaluation.
 
 ---
 
-# Week 4 – Vision-Language Models
+# Week 5 – Diffusion Models & Synthetic Data Augmentation
 
 <details>
-<summary><b>Click to expand Week 4 details</b></summary>
+<summary><b>Click to expand Week 5 details</b></summary>
 
-Week 4 extends image captioning by replacing the custom encoder-decoder architectures of Week 3 with **pretrained Vision-Language Models (VLMs)**. Experiments are conducted on the same **VizWiz dataset** and evaluated with the same **BLEU** and **CIDEr** metrics.
-
-The week is split into two tasks:
-
-* **Task 1** – ViT + GPT-2 with flexible fine-tuning strategies.
-* **Task 2** – Qwen3 Vision-Language models with LoRA fine-tuning, plus CLIP-based analysis.
+Week 5 investigates whether **synthetic text–image pairs generated with diffusion models** can improve image captioning performance on the **VizWiz dataset**. The week covers diffusion model exploration, synthetic dataset generation, and fine-tuning the ViT + Qwen3 captioning model from Week 4 with augmented data.
 
 ---
 
-## Week 4 Tasks
+## Week 5 Tasks
 
-**Task 1 – ViT + GPT-2 Image Captioning**
+**a. Stable Diffusion Model Architecture & Variants**
 
-Use a `VisionEncoderDecoderModel` combining a **Vision Transformer (ViT)** encoder and a **GPT-2** decoder for image captioning.
-
-Fine-tuning strategies explored:
-
-* **pretrained** – both encoder and decoder frozen; evaluation only.
-* **vit_frozen_gpt_ft** – ViT encoder frozen; GPT-2 decoder fine-tuned via cross-attention weights only (preserves language generation behavior).
-* **vit_ft_gpt_frozen** – ViT encoder fine-tuned (last N layers); GPT-2 decoder frozen.
-* **vit_ft_gpt_ft** – both encoder and decoder fine-tuned jointly.
-
-Encoder fine-tuning modes: `frozen`, `last_n`, `full`.
-
-Decoder fine-tuning modes: `frozen`, `cross_attn`, `last_n`, `full`.
-
-Regularization levers: learning rate, weight decay, label smoothing, gradient clipping, repetition penalty.
+* Study the **Latent Diffusion Model (LDM)** framework: VAE encoder/decoder, denoising U-Net, CLIP text encoder, and classifier-free guidance (CFG).
+* Compare four model variants on direct text-to-image inference:
+  * **SD-Turbo** – 1-step distilled, lowest VRAM (3 GB)
+  * **SDXL** – 3× larger U-Net, dual text encoder, best quality/resource ratio at 25 steps
+  * **SDXL-Turbo** – distilled SDXL, 1 step, 8 GB VRAM
+  * **SD-3.5-Medium** – Multimodal Diffusion Transformer, three text encoders, highest quality, 18 GB VRAM
 
 ---
 
-**Task 2 – Qwen3 VLM with LoRA Fine-tuning**
+**b. Inference Experiments**
 
-Use **Qwen3 Vision-Language models** as image captioning systems.
+Using SDXL (best quality/resource ratio), a series of controlled experiments explore diffusion model behaviour:
 
-Strategies evaluated:
-
-* **zero_shot_8b** – zero-shot evaluation with Qwen3-VL-8B-Instruct; no training.
-* **baseline_2b / baseline_4b** – zero-shot baselines with Qwen3-VL-2B and 4B before fine-tuning.
-* **lora_2b** – frozen ViT encoder (best Task 1 weights) + LoRA-fine-tuned Qwen3-1.7B decoder.
-* **lora_4b** – frozen ViT encoder + LoRA-fine-tuned Qwen3-4B decoder.
-
-Architecture for LoRA strategies:
-
-1. Frozen ViT (fine-tuned in Task 1) → linear projection → LoRA-adapted Qwen3 (text decoder).
-2. Only the projection layer and the LoRA adapters are updated during training.
-
-Additional analysis:
-
-* **CLIP-based analysis** – evaluate visual-text alignment using CLIP embeddings.
+* **Denoising trajectory** – latent snapshots at steps 0, 5, 10 … 50 show how global structure emerges early and fine details sharpen late.
+* **DDPM vs DDIM** – stochastic (DDPM) vs deterministic ODE (DDIM) samplers across 10–100 steps.
+* **Eta parameter** – interpolates between DDIM (η=0) and DDPM (η=1), trading stability for diversity.
+* **Scheduler zoo** – DDIM, PNDM, Euler, Euler-A, DPM-Solver++, UniPC across 10/20/50 steps. DPM-Solver++ at 20 steps chosen as best.
+* **Number of denoising steps** – quality saturation analysis; ~30 DDIM steps is the practical optimum.
+* **CFG guidance scale** – 1–20 sweep; sweet spot at 7.5–10.
+* **Prompt engineering** – bare / detailed positive / negative / full / style / negative-overload conditions.
 
 ---
 
-## Week 4 Implementation Structure
+**c. VizWiz Dataset Analysis & Problem Identification**
 
-### Task 1 – ViT + GPT-2
-
-`Week4/Task1/`
-
-ViT + GPT-2 encoder-decoder captioning with regular fine-tuning.
-
-Main components:
-
-* `model.py` – `VisionEncoderDecoderCaptioningModel` with configurable encoder/decoder fine-tuning modes
-* `train.py` – training loop with teacher forcing and regularization
-* `dataset.py` – VizWiz dataset loader
-* `main.py` – entry point; selects fine-tuning strategy via CLI
-* `metrics.py` – BLEU / CIDEr evaluation
-* `visualization.py` – caption visualization utilities
-* `compare_results.py` – cross-experiment result comparison
-
-Cluster job scripts:
-
-* `vit_gpt2_pretrained.sh` – evaluation only (both frozen)
-* `vit_gpt2_vit_frozen_gpt_ft.sh` – frozen ViT, fine-tuned GPT-2
-* `vit_gpt2_vit_ft_gpt_frozen.sh` – fine-tuned ViT, frozen GPT-2
-* `vit_gpt2_vit_ft_gpt_frozen_continue.sh` – resume ViT fine-tuning
-* `vit_gpt2_vit_ft_gpt_ft.sh` – both components fine-tuned
+* Inspect the VizWiz training set (23,431 images) and identify five recurring degradation patterns: **motion blur**, **dark/underexposed**, **close-up/bad framing**, **overexposed**, **low quality/noisy**.
+* Score all training images with **CLIP ViT-L/14** using a quality score `sim(image, positive) − sim(image, negative)`. Result: **97.4 % of images score negative**, confirming the dataset is inherently degraded.
+* Propose generating synthetic degraded images to augment training and improve model robustness.
 
 ---
 
-### Task 2 – Qwen3 VLM with LoRA
+**d. Synthetic Dataset Generation**
 
-`Week4/Task2/`
+Three generation approaches were explored:
 
-Frozen ViT + LoRA-fine-tuned Qwen3 captioning.
+1. **Image-to-image diffusion (discarded)** – SD-Turbo/SDXL img2img with degradation prompts. At low strength the model repairs images; at high strength semantic content is lost. Approach abandoned.
 
-Main components:
+2. **Text-to-image with degradation prompts** – Drop the reference image; use the original caption as a semantic anchor and a degradation descriptor as a style modifier (e.g. `"a blurry, out of focus version of {caption}"`). Negative prompts used per style. Styles assigned round-robin by CLIP quality rank (~4,686 images per style). Better alignment with target degradations, though hallucinations remain.
 
-* `model.py` – `FrozenViTEncoder` + `ViTCausalLMCaptioningModel` with LoRA adapters
-* `train.py` – LoRA fine-tuning loop
-* `dataset.py` – VizWiz dataset loader
-* `main.py` – entry point; selects model size and strategy via CLI
-* `metrics.py` – BLEU / CIDEr evaluation
-* `visualization.py` – caption visualization utilities
-* `compare_results.py` – cross-experiment result comparison
+3. **Caption-only (clean baseline)** – Use the raw VizWiz caption as the sole prompt, no negative prompt. Generates clean, photorealistic images as a simpler augmentation baseline.
 
-Cluster job scripts:
-
-* `qwen_2b_baseline.sh` – zero-shot baseline with 2B model
-* `qwen_4b_baseline.sh` – zero-shot baseline with 4B model
-* `qwen_2b_lora.sh` – LoRA fine-tuning with 2B model
-* `qwen_4b_lora.sh` – LoRA fine-tuning with 4B model
-* `qwen_2b_lora_eval.sh` – evaluation of fine-tuned 2B model
-* `qwen_8b_eval.sh` – zero-shot evaluation with 8B model
+For approaches 2 and 3: **23,431 synthetic images** each, generated with **SDXL-Turbo** (8 inference steps, 512 × 512, guidance scale 0). Annotations saved in VizWiz-compatible `annotations.json` format.
 
 ---
 
-### CLIP Analysis
+**e. Fine-tuning with Synthetic Data**
 
-`Week4/Task2/clip_analysis/`
+Fine-tune the Week 4 captioning model (frozen ViT-Task1 encoder → linear projection → LoRA Qwen3-1.7B) with 50 % augmented data mixed into the original VizWiz training split:
 
-CLIP-based visual-text alignment analysis.
+* **Original training samples:** 22,866
+* **Augmented samples added:** 11,715 (50 %)
+* **Total per run:** 34,581
 
-Main components:
+Two runs executed in parallel:
 
-* `clip_analysis.py` – CLIP embedding computation and similarity analysis
+| Run | Augmentation | Result |
+|---|---|---|
+| Degradation Aug50% | Approach 2 (degradation txt2img) | Metric instability persists; recovers at final epoch; METEOR 26.1% at best epoch |
+| Caption-only Aug50% | Approach 3 (clean txt2img) | Stable training from epoch 0; METEOR 27.5% at best epoch; outperforms baseline on all metrics |
 
-Cluster job scripts:
+Key finding: **caption-only augmentation substantially mitigates the ViT–Qwen embedding space misalignment** identified in Week 4. The broader visual distribution regularises the linear projection layer. Degradation augmentation worsens the misalignment because the ViT encoder was not trained on artificial synthetic degradations.
 
-* `run_clip_analysis_2b.sh` – CLIP analysis for 2B model outputs
-* `run_clip_analysis_8b.sh` – CLIP analysis for 8B model outputs
+---
+
+## Week 5 Implementation Structure
+
+### Task A – Model Variants
+
+`Week5/task_a/`
+
+* `compare_models.py` – run and benchmark SD-Turbo, SDXL, SDXL-Turbo, SD-3.5-Medium on a fixed prompt; records load time, generation time, and peak VRAM.
+
+---
+
+### Task B – Inference Experiments
+
+`Week5/task_b/`
+
+* `explore_inference.py` – denoising trajectory, DDPM/DDIM comparison, eta sweep, scheduler zoo, step count ablation, CFG sweep, and prompt engineering experiments. All using SDXL.
+
+---
+
+### Task C – Dataset Analysis
+
+`Week5/task_c/`
+
+* `task_c.py` – CLIP quality scoring of the VizWiz training set; produces the quality score histogram.
+
+---
+
+### Task D – Synthetic Dataset Generation
+
+`Week5/task_d/`
+
+* `task_d_img2img.py` – image-to-image pipeline (approach 1, discarded).
+* `task_d.py` – text-to-image degradation pipeline (approach 2).
+* `generate_augmented_dataset.py` – unified generator for both degradation mode and caption-only mode; saves VizWiz-compatible `annotations.json`.
+* `clip_score.py` – CLIP quality scoring utilities.
+* `augmented_dataset/` – output directories for generated datasets (not tracked in git).
+
+---
+
+### Task E – Fine-tuning
+
+`Week5/task_e/`
+
+* `model.py` – `FrozenViTEncoder` + `ViTCausalLMCaptioningModel` (frozen ViT → linear projection → LoRA Qwen3-1.7B). Only the projection layer and LoRA adapters are trainable.
+* `dataset.py` – VizWiz dataset loader with augmented dataset merging (`ConcatDataset`).
+* `train.py` – training loop with greedy decoding during validation, metric-based checkpoint saving, resume support (`resume.pt`).
+* `metrics.py` – BLEU, ROUGE-L, METEOR, sacreBLEU evaluation.
+* `main.py` – entry point; `--aug-fraction` and `--aug-dataset` control augmentation.
+* `plots/` – analysis plots (training/validation loss curves, BLEU-1 stability panel, metrics comparison bar chart).
+* `results/` – per-run `history.csv`, `summary.json`, `predictions_val.json`, and model weights (not tracked in git).
 
 </details>
 
